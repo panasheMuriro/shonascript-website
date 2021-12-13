@@ -1,0 +1,75 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+
+:root {
+  --ifm-color-primary: #008080;
+  --ifm-color-primary-dark: rgb(33, 175, 144);
+  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-code-font-size: 95%;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.laptop_hero{
+ display: flex; 
+ height: 60vh;
+ background-color: #008080;
+}
+
+.l_h_left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 10px;
+  color: white;
+  background-image: url('https://lh3.googleusercontent.com/oFcAWOLcdwM_WhFf2CbyBs0p4ExX6AxWwzTbX-rvuFq2YXRPSFITWufaMtED1blMykVIJRXlOtDUwSoq3c1i48fP0CgPFMk48m30uLMoJuALyh0GoOlgRjDw9fnCUeWj7Y1mnbysDn_MqAAjuPViZcIIdegiW2Oo5Ek-hwxu1iwl72ras4-EiNRzcHo9VTar484SCMLbDzw1tfSUKns_MD-zzDR8LUIpi4HGHqA3AmgUBBBI0GrasmDElGiyPcM7Vw1igvq-iv9fsszJf0tFyb5l1c3qzBMk8YqcnEWeFlSVjPbUMHlZvmD89PLHmByPs1UJCCUlOHm1KgUjI3VAQVKHKcSWxeF4GcXbKxYYdO-JiGZmCTPqcdRec-Qxp-k8mJnt1SZaV_7PF5LE386o9KFyLjru-ZSEyBllDGMc7yU3z0qBzCZVBuxI6gsk_6Xx_N7boaPA8LR8rPm2TyR0cDzVxSyn2zGo_N2IeHNLkaMzGrbnSVNVJWzPeTVJHGyORPQsJdIJHsoiQJ_IdoBLW3nlgGCCwpnqY5Hz3yFyAZi1wLITESZoOUxwixaz-M9Ykqembm25R8ONqPPfQYilCbWY_PZY11AxxLKlJZ8saIJ1K6ynQr3ss5OSMoC6gRemK1LFEvd2sMq2kDK0FO-XqcdAnpriF-EQq6f3gOryqLykA_VpUHgtAOvqw985a-2_ToZ3-HJRtbkUJKd6docsWPQ=w640-h213-no?authuser=0');
+  
+}
+
+.l_h_left_inner {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 60%
+}
+
+.l_h_right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.l_h_r_code {
+  background-color: #FFEDC4;
+  height: 80%;
+  width: 80%;
+  border-radius: 20px;
+  transform: rotate(10deg);
+}
+
+.l_h_r_image2 {
+  transform: rotate(-5deg) translateY(-15px) translateX(200px);
+
+}
