@@ -5,6 +5,21 @@
  */
 
 /* You can override the default Infima variables here. */
+@font-face {
+  font-family: "Helvetica";
+  src: url('../../Helvetica-Font/Helvetica.ttf');
+}
+
+@font-face {
+  font-family: "SF";
+  src: url('../../SF/SFUIText-Regular.otf');
+}
+
+@font-face {
+  font-family: "SFMed";
+  src: url('../../SF/SFUIText-Bold.otf');
+}
+
 
 :root {
   --ifm-color-primary: #008080;
@@ -15,6 +30,8 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
+  --ifm-heading-font-family: "SFMed";
+    font-family: 'SF';
 }
 
 .docusaurus-highlight-code-line {
@@ -85,7 +102,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   height: 21vh;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px), only screen and (orientation: portrait){
   body{
     overflow-x: hidden !important;
   }
@@ -93,10 +110,9 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 .laptop_hero{
   display: flex; 
   flex-direction: column;
-  height: 70vh;
+  min-height: 70vh;
   background-color: #008080;
-  margin-bottom: 60px;
-  
+  margin-bottom: 100px
  }
  .hero__title{
    font-size: 2.4rem
