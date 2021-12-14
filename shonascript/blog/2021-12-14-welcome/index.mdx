@@ -1,0 +1,65 @@
+---
+slug: welcome
+title: Welcome
+authors: panashe
+tags: [ShonaScript]
+---
+
+## What if ...
+
+_What if I could write code in Shona? Does this mean I would started learning about coding a lot sooner? Does this mean most Zimbabwean people like me would also have started coding sooner?_
+
+These are the questions which drove me to researching about the need of a new programming language. One that people would use their native language to write code.
+
+<Question text={`Ummm Okay. But do we really need another programming language?`}/>
+
+I decided that the answer for my question was yes. but why? Lets get into the **disadvantages** of the existing programming languages
+
+### Disadvantages
+
+It is important before going any further to fully understand that many of the existing languages are state of art. Programmers can achieve most of the desired software in any form using the existing languages. But there is one question: 
+
+<Question text="How does a native Shona speaker with a limited understanding of English get to understand the somewhat complicated terminology and concepts of the existing programming languages."/>
+
+So just to highlight the main disadvantage of existing programming languages:
+
+:::danger disadvantages 
+1. Most native speakers have a limited understanding of English
+- since most of the programming languages are in English, this means understanding English is a prerequisite to understanding the concepts behind the fundamentals of computer programming
+:::
+
+
+### Where ShonaScript comes in
+Now that I have pointed out the main disadvantage of English-based programming languages, you can easily understand why `ShonaScript` was born. So let's look at the advantages of `ShonaScript`
+
+:::success Advantages of ShonaScript
+1. Anyone who understands Shona has a better chance of understanding of `ShonaScript` than, say, `JavaScript`. 
+- It is worth mentioning that `ShonaScript` is based on JavaScript, in other words, `ShonaScript` is somewhat disguised `JavaScript`, and it is interpreted as JavaScript 
+2. `ShonaScript` will be a bridge from _“I don’t know how to code”_ to _“I am ready to explore the computer programming world”_
+:::
+
+I genuinely hope that ShonaScript will motivate most of the Shona speakers to attempt coding. The only way to know if something is right for you is to go ahead and try it. 
+
+### Ndebele Programming language?
+If you a Zimbabwean reading this article, you are probably asking: 
+
+<Question text="What about a coding language in Ndebele language for the Ndebele speakers?"/>
+
+I did my best to keep a good documentation on how I made `ShonaScipt`, so I will make the documentation **public** so that any **Ndebele** speakers who might want to contribute to a **Ndebele** programming language can work with me on that. 
+
+Goodluck
+
+export const Question = ({text}) =>    (
+        <div style={{display: "flex", width: "80%", minHeight: "100px", backgroundColor: "#FFEDC4", borderRadius: "10px", padding: "5px", margin: "auto", border: "solid", borderWidth: "1px", borderColor: "rgba(0,0,0,0.1)", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px", marginBottom: "10px"}}>
+         <div style={{flex: 2, fontSize: "14px"}}>{text}</div> 
+        <div style={{flex: 1, display:'flex', alignItems: "center"}}>
+            <img src="/img/question (1).png" height="100px">
+            </img>
+        </div>
+        </div>
+    )
+
+
+
+
+

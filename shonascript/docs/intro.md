@@ -2,41 +2,39 @@
 sidebar_position: 1
 ---
 
+# 24 December
+
+:::danger SHONASCRIPT LAUNCHING 24 DECEMBER
+
+ShonaScript will launch on `December 24`, so check this website again after Christmas _(25 December)_ to see more details about how to use the programming language.
+
+:::
+
 # ShonaScript Chii?
 
 ShonaScript i **programming language** inokubatsira kuti udzidzire kunyora **code** ne **shona**.
 
-> **programming language** - _i language inonzwisiswa ne computer_
->
-> **code** - _ma words, ma numbers, kana ma special characters akaita se ma brackets aya "{},()" anoshandiswa mu programming language_
->
-> **shona** - _i language inoshandiswa ne mamwe ma Zimbabweans pakutaura_
+:::info tsananguro
+ **programming language** - _i language inonzwisiswa ne computer_
 
+ **code** - _ma words, ma numbers, kana ma special characters akaita se ma brackets aya "{},()" anoshandiswa mu programming language_
+
+ **shona** - _i language inoshandiswa ne mamwe ma Zimbabweans pakutaura_
+
+:::
 
 
 
 ## Zvii zvinodiwa?
 
-Kuti ugone kutanga kunyora code ne Shonascript, panodiwa **computer** ne **internet**. Internet inongodiwa pakutanga kana uchidownloader ma files ne ma tools.
+Kuti ugone kutanga kunyora `code` ne ShonaScript, panodiwa: 
+1. Computer - yekunyorera `code`
+2. Internet - inongodiwa pakudownloader ma files nezvimwe zvaunozoshandisa
 
 ## Installation
 
-Generate a new Docusaurus site using the **classic template**:
+:::info INFORMATION COMING SOON
+Thank you for visiting this page. More details will be on 24 December. Please visit again. Thank you! 😀
+:::
 
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+## Want some

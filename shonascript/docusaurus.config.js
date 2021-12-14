@@ -44,31 +44,27 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         title: '',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/shonascript-logo.svg',
+          src: 'img/SHONASCRIPT.png',
         },
         items: [
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Learn',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
         ],
+     
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documents',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Tanga Pano',
                 to: '/docs/intro',
               },
             ],
@@ -77,16 +73,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
+                label: 'Facebook',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
               },
             ],
           },
@@ -97,18 +85,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 label: 'Blog',
                 to: '/blog',
               },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
+             
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Shonascript.org`,
+        copyright: `Copyright © ${new Date().getFullYear()} ShonaScript.org`,
       },
       prism: {
         theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
       },
+    
+   
     }),
 });
