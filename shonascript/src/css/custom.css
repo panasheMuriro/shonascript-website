@@ -28,10 +28,17 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.react-toggle{
+  display: none !important
+}
+
+
 .laptop_hero{
  display: flex; 
  height: 60vh;
+ min-height: 60vh;
  background-color: #008080;
+ margin-bottom: 60px;
 }
 
 .l_h_left {
@@ -42,8 +49,8 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   align-items: start;
   padding-left: 10px;
   color: white;
-  background-image: url('https://lh3.googleusercontent.com/oFcAWOLcdwM_WhFf2CbyBs0p4ExX6AxWwzTbX-rvuFq2YXRPSFITWufaMtED1blMykVIJRXlOtDUwSoq3c1i48fP0CgPFMk48m30uLMoJuALyh0GoOlgRjDw9fnCUeWj7Y1mnbysDn_MqAAjuPViZcIIdegiW2Oo5Ek-hwxu1iwl72ras4-EiNRzcHo9VTar484SCMLbDzw1tfSUKns_MD-zzDR8LUIpi4HGHqA3AmgUBBBI0GrasmDElGiyPcM7Vw1igvq-iv9fsszJf0tFyb5l1c3qzBMk8YqcnEWeFlSVjPbUMHlZvmD89PLHmByPs1UJCCUlOHm1KgUjI3VAQVKHKcSWxeF4GcXbKxYYdO-JiGZmCTPqcdRec-Qxp-k8mJnt1SZaV_7PF5LE386o9KFyLjru-ZSEyBllDGMc7yU3z0qBzCZVBuxI6gsk_6Xx_N7boaPA8LR8rPm2TyR0cDzVxSyn2zGo_N2IeHNLkaMzGrbnSVNVJWzPeTVJHGyORPQsJdIJHsoiQJ_IdoBLW3nlgGCCwpnqY5Hz3yFyAZi1wLITESZoOUxwixaz-M9Ykqembm25R8ONqPPfQYilCbWY_PZY11AxxLKlJZ8saIJ1K6ynQr3ss5OSMoC6gRemK1LFEvd2sMq2kDK0FO-XqcdAnpriF-EQq6f3gOryqLykA_VpUHgtAOvqw985a-2_ToZ3-HJRtbkUJKd6docsWPQ=w640-h213-no?authuser=0');
-  
+  background-image: url('/img/shona_outline.png');
+  height: 100%;
 }
 
 .l_h_left_inner {
@@ -69,7 +76,86 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   transform: rotate(10deg);
 }
 
+.l_h_r_image1{
+  height: 30vh
+}
+
 .l_h_r_image2 {
-  transform: rotate(-5deg) translateY(-15px) translateX(200px);
+  transform: rotate(-5deg) translateY(-5px) translateX(180px);
+  height: 21vh;
+}
+
+@media only screen and (max-width: 768px) {
+  body{
+    overflow-x: hidden !important;
+  }
+
+.laptop_hero{
+  display: flex; 
+  flex-direction: column;
+  height: 70vh;
+  background-color: #008080;
+  margin-bottom: 60px;
+  
+ }
+ .hero__title{
+   font-size: 2.4rem
+ }
+
+ .l_h_left {
+   flex: 3;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: start;
+   padding-left: 10px;
+   color: white;
+   /* padding-top: 5vh; */
+   margin-bottom: 5vh;
+   background-image: url('/img/shona_outline.png');
+   background-size:contain;
+ }
+ 
+ .l_h_left_inner {
+   margin-left: 15px;
+   
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   width: 85%;
+ }
+ 
+ .l_h_right {
+   flex: 3;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #008080;
+   /* padding-bottom: 20px; */
+   background-image: url('/img/shona_outline.png');
+   background-size:contain;
+ }
+ 
+ .l_h_r_code {
+   background-color: #FFEDC4;
+   height: 80%;
+   width: 80%;
+   border-radius: 20px;
+   transform: rotate(10deg);
+ }
+ 
+ .l_h_r_image1{
+   height: 20vh;
+   transform: rotate(-15deg) translateX(10px);
+
+ }
+ 
+ .l_h_r_image2 {
+   transform: rotate(-5deg) translateY(0px) translateX(20px);
+   height: 17vh;
+ }
+  
 
 }
