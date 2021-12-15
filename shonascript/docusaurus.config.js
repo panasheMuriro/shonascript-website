@@ -56,6 +56,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           {to: '/blog', label: 'Blog', position: 'left'},
         ],
       },
+      metadata: [{name: 'keywords', content: 'shona, shonascript, shona coding'}],
       footer: {
         style: 'dark',
         links: [
@@ -93,7 +94,5 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       prism: {
         theme: lightCodeTheme,
       },
-    
-   
     }),
 });

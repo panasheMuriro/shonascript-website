@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: "SF";
-  src: url('../../SF/SFUIText-Regular.otf');
+  src: url('/SF/SFUIText-Regular.otf');
 }
 .features {
   display: flex;
@@ -9,7 +9,7 @@
   padding: 2rem 0;
   width: 100%;
   /* font-family: 'Helvetica'; */
-  font-family: 'SF'
+  font-family:   sans-serif, arial;
 }
 
 .featureSvg {

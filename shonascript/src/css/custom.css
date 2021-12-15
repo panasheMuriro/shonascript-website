@@ -8,12 +8,12 @@
 
 @font-face {
   font-family: "SF";
-  src: url('../../SF/SFUIText-Regular.otf');
+  src: url('/SF/SFUIText-Regular.otf');
 }
 
 @font-face {
   font-family: "SFMed";
-  src: url('../../SF/SFUIText-Bold.otf');
+  src: url('/SF/SFUIText-Bold.otf');
 }
 
 
@@ -26,8 +26,8 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
-  --ifm-heading-font-family: "SFMed";
-    font-family: 'SF';
+  --ifm-heading-font-family: "SFMed", sans-serif, arial;
+    font-family: sans-serif, arial;
 }
 
 .docusaurus-highlight-code-line {
