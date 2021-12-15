@@ -37,4 +37,3 @@ Kuti ugone kutanga kunyora `code` ne ShonaScript, panodiwa:
 Thank you for visiting this page. More details will be on 24 December. Please visit again. Thank you! 😀
 :::
 
-## Want some

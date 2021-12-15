@@ -5,14 +5,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
   title: 'Code in Shona',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Code in Shona',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus',
+  organizationName: 'ShonaScript', // Usually your GitHub org/user name.
+  projectName: 'ShonaScript',
   
   presets: [
     [
@@ -43,7 +43,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       navbar: {
         title: '',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'ShonaScript Logo',
           src: 'img/SHONASCRIPT.png',
         },
         items: [
@@ -55,7 +55,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           },
           {to: '/blog', label: 'Blog', position: 'left'},
         ],
-     
       },
       footer: {
         style: 'dark',
