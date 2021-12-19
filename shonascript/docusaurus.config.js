@@ -74,7 +74,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             items: [
               {
                 label: 'Facebook',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                href: 'https://www.facebook.com/ShonaScript-Programming-Language-106510271891672',
               },
             ],
           },

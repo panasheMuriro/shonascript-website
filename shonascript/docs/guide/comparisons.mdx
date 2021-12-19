@@ -4,14 +4,87 @@ sidebar_position: 3
 
 # Enzaniso
 
+## Enzaniso chii?
 
 :::danger Waiting For December 24
 More information coming after 24 December 2021. Please visit again then
 :::
 
-<!-- [merry chistmas]("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/merry-christmas-logo-design-template-bbb470a4ca116bc6f6a9aa2b2cfab9b4_screen.jpg?ts=1601407043") -->
-<Image source="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/merry-christmas-logo-design-template-bbb470a4ca116bc6f6a9aa2b2cfab9b4_screen.jpg?ts=1601407043"/>
 
+Enzaniso dzinoshandiswa kana uchida kuenzanisa ma `variables` 2. 
+Ngatomboti une 2 mavariables awagadzira kare `variableYekutanga` na `variableYechipiri`.
+Kana uchishandisa enzaniso, unenge uchitora `variable` yekutanga, oienzanisa ne imwe `variable`. Pane enzaniso dzemhando 3.
+Apa, unogona kutora `variableYekutanga` uchida kuona zvinhu 3 izvi:
+
+:::info Mhando yeenzaniso
+1. **Yakafanana na** `variableYechipiri` here?
+2. **Idiki pane** `variableYechipiri` here?
+3. **Ihombe kudarika/kupfuura** `variableYechipiri` here?
+:::
+
+## Mashandisirwo e enzaniso
+
+Mashandisirwo chaiwo e `enzaniso` uchazomaoona kana waverenge topic ye 'Kana/Zimwe'. Asi panguva ino unogona kumboona zvinoitika panenge pachishandiswa `enzaniso`.
+
+<Image source="/img/enzaniso1.jpeg"/>
+
+Chii chikuitika apa?
+
+**Line 1 na Line 2**
+```
+variableYekutanga = 5
+variableYechipiri = 6
+```
+Tatanga nekugadzira ma variables 2:`variableYekutanga` na `variableYechipiri`. Ndiwo ma variables atiri kuda kuzoenzanisa
+
+**Line 4 na Line 5**
+```
+zvakafananaHere = variableYekutanga yakafanana na variableYechipiri
+nyora(zvakafananaHere)
+```
+
+Apa tiri kuda kuona kuti `variableYekutanga` yakafanana na `variableYechipiri` here, saka tashandisa `yakafanana na`. 
+Ukaenzanisa ma variables aya, unofana kuona kuti akaenzana here kana kuti kwete. 
+
+<Question text="ko nyora() arikutsvagei pa line 5"/>
+
+pa `line 4` tanga tichienzanisa `variableYekutanga` na `variableYechipiri`, pakuenzanisa kwatiri kuita, tinogona kuona kuti `ichokwadi` kana kuti `kunyepa`.
+Kuti iwewe ugone kuzoona kuti chii chaitiki pataenzanisa, uchashandisa `nyora()`.
+
+Tagadzira `variable` inonzi `zvakafananaHere` tichibva taita kuti variable iyoyo iite zvinhu zvichabuda pakuenzanisa ma `variableYekutanga` na `variableYechipiri`. 
+Tinoita izvi nekuti tikuda kuzonyora `variable` iyoyo tione kuti chii chaitika pataenzanisa.
+
+Ukaita ma steps emu `terminal` ekuti `code` yako ishande aya: 
+
+:::info Masteps ekuti `code` ishande
+1. mu file rakanzi `index.shona`
+    nyora:
+    ```
+    variableYekutanga = 5
+    variableYechipiri = 6
+    zvakafananaHere = variableYekutanga akafanana na variableYechipiri
+    nyora(zvakafananaHere)
+    ```
+2. mu `terminal` nyora kuti `node shona.js`, wobaya `enter`
+3. mu `terminal` zvekare, nyora kuti `node index.js`, wobaya `enter`
+:::
+
+
+Ukaita masteps aya zvakanaka, unofana kuona mu terminal makanzi `false`. Zvichireva kuti `kunyepa`. Ukatarisawo `variableYekutanga` ndi 5, na `variableYechipiri` ndi 6 havana kuenzana saka zvechokwadi kuti _5 akafanana na 6_ kunyepa.
+
+**Line 7 na Line 8**
+
+Matsanangurirwo aitwa pa **line 4 na line 5** akafanana ne matsanangurirwo epa **line 7 na line 8**. Asi changochinja ndechekuti tiri kuda kuona kuti `variableYekutanga` idiki here pana `variableYechipiri`. 
+Ukadzokorora masteps emu `terminal` aye ekuti `code` yako ishande, unofana kuona kuti `true` mu `terminal`. `true` zvireva kuti ichokwadi. Zvechokwadiwo `variableYekutanga`(5), idiki pane `variableYechipiri`(6)
+
+
+**Line 10 na Line 11**
+
+Matsanangurirwo aitwa pa **line 4 na line 5** akafanana ne matsanangurirwo epa **line 7 na line 8**. Asi changochinja ndechekuti tiri kuda kuona kuti `variableYekutanga` ihombe here pana `variableYechipiri`. 
+Ukadzokorora masteps emu `terminal` aye ekuti `code` yako ishande, unofana kuona kuti `false` mu `terminal`. `False` zvireva kuti kunyepa. Zvechokwadi `variableYekutanga`(5), haasi muhombe pane `variableYechipiri` (6)
+
+
+Enzaniso dzinoshandiswa pakawanda wanda sezvauchazoona ukaramba uchiverenga
 
 
 export const Image = ({source}) => (
@@ -22,3 +95,14 @@ export const Image = ({source}) => (
     </div>
  
 );
+
+
+export const Question = ({text}) =>    (
+        <div style={{display: "flex",alignItems:"center",  width: "80%", minHeight: "100px", backgroundColor: "#FFEDC4", borderRadius: "10px", padding: "5px", margin: "auto", border: "solid", borderWidth: "1px", borderColor: "rgba(0,0,0,0.1)", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px", marginBottom: "10px"}}>
+         <div style={{flex: 2, fontSize: "14px"}}>{text}</div> 
+        <div style={{flex: 1, display:'flex', alignItems: "center"}}>
+            <img src="/img/question (1).png" height="100px">
+            </img>
+        </div>
+        </div>
+    )
