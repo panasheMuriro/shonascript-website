@@ -2,16 +2,611 @@
 sidebar_position: 5
 ---
 
-# List
+# Ma list
 
-:::danger Waiting For December 24
-More information coming after 24 December 2021. Please visit again then
+:::caution Not revised yet
 :::
 
-<!-- [merry chistmas]("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/merry-christmas-logo-design-template-bbb470a4ca116bc6f6a9aa2b2cfab9b4_screen.jpg?ts=1601407043") -->
-<Image source="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/merry-christmas-logo-design-template-bbb470a4ca116bc6f6a9aa2b2cfab9b4_screen.jpg?ts=1601407043"/>
+
+## Ma list chii?
+
+Kana iwewe uchida kuenda kunotenga zvinhu zvakawanda, unogona kunyora zvinhu zvaukuda kunotenga 
+pa pepa kana mu `phone`. Kana uchinge waita izvi, tinoti wanyora `list` rezvaukuda kunotenga.
+
+<Question text="Ko computer inoona sei list" />
+
+## Manyorerwo e list
+
+`Computer` inoziva kuti wanyora `list` kana ukanyora ma `square brackets` se izvi: 
+```
+["Muvhuro", "Chipiri", "Chitatu"]
+```
 
 
+:::info **Tsananguro**
+
+Apa ndagadzira `list` re mazuva 3 kubva pana Muvhuro kusvika pana Chitatu. Mu `list` randagadzira iri, mune zvinhu 3. zvinhu izvi zvandaisa mu `list` aya mashoko ane ma `quotes` akapatsanurwa ne ma `comma,`.
+:::
+
+:::success Zvii zvinobvumidzwa mu list?
+1. `Mashoko` ane ma _quotes_
+- sokuti: `["Muvhuro","Chipiri","Chitatu"]`
+2. Ma `nhamba`
+- sokuti:  `[2020, 2021, 2022]`
+3. Ma `variables`
+- sokuti:
+```
+muvhuro = "Muvhuro"
+chipiri = "Chipiri"
+chitatu = "Chitatu"
+
+[muvhuro, chipiri, chitatu]
+```
+- Ukatarisa apa, ndaisa ma `variable` mu `list`, asi ndatanga ndamagadzira ma `variable` iwayo se `mashoko` zvakanaka. Kana usina kuzvinzwisisa izvi, 
+unofana kudzokera kunoverenga nezve ma `variables` kumashure kune _topic_ yema `variables` kuti zvii zvikuitika.
+:::
+
+
+## Mashandisirwo e list
+
+Kazhinji munhu anogadzira `list` achida kuzorishandisa. Anogona kuda kudzima zvinhu mu`list` imomo, kana kuwedzera zvimwe zvinhu. Kuti ugone kuzoshandisa `list` raunenge wagadzira, unofana kuripa zita. 
+Unopa `list` zita kunge uri kugadzira `variable`.
+Ngatimboti `list` randagadzira kumashure `["Muvhuro", "Chipiri", "Chitatu"]` waakuda kuripa zita rekuti `mazuva`, unoita se izvi
+
+```
+mazuva = ["Muvhuro", "Chipiri", "Chitatu"]
+```
+:::danger Zita Re list
+
+Zita re list rinonyorwa semagadzirirwo evariable. Manyorero anoita ndeaya: 
+1. Zita ngariite shoko rimwe chete rakabatanidzwa
+- sokuti `listRangu`
+- usati `list Rangu`, nekuti aya mashoko maviri
+2. Zita ngarisaite `nhamba`
+- sokuti `2021 = ["Muvhuro", "Chipiri", "Chitatu"]`
+:::
+
+### Muenzaniso: Vanhu mu kombi
+
+Ngatimboti iwewe uri hwindi akarongeka we kombi, arikukwidza vanhu mukombi asi achinyora `list`  remazita evanhu vapinda mukombi.
+Ngatimboti panguva ino mukombi maane vanhu 5, zita re `list` rako rinonzi `vanhuMukombi`.
+
+:::success Ita 
+1. mu `index.shona` pa `line 1`, nyora kuti: 
+```
+vanhuMukombi = ["Panashe", "Tanaka", "Kudzai", "Kupa", "Vimbai"]
+```
+2. mu `index.shona` pa `line 2`, nyora kuti: 
+```
+nyora(vanhuMukombi)
+```
+3. mu `terminal`, nyora kuti: 
+`node shona.js` wobaya `enter`
+
+4. mu `terminal`, nyora kuti: 
+`node index.js` wobaya `enter`
+:::
+
+Kana ukaita zivi zvakanaka, unofana kuona muterminal makanzi 
+```
+["Panashe", "Tanaka", "Kudzai", "Kupa", "Vimbai"]
+```
+Izvi zvinoitika nekuti wagadzira list re `vanhuMukombi` zvakanaka, wobva wazoudza `computer` kuti inyore list iri ichishandisa `nyora(vanhuMukombi)`
+
+### Kuverenga zvinhu zviri mu `list`
+
+Kana uchida kuziva kuti mu `list` rako mune zvinhu zvingani, unoshandisa `.zvingani()`, `.vangani()`, kana `.mangani()`, se izvi:
+```
+vanhuMukombi.vangani()
+```
+
+
+<Image source="/img/list7.jpeg" />
+
+
+:::tip Ita
+1. nyora `code` iyi mu `index.shona`
+
+2. mu `terminal`, nyora kuti: 
+`node shona.js` wobaya `enter`
+
+3. mu `terminal`, nyora kuti: 
+`node index.js` wobaya `enter`
+:::
+
+Ukaita izvi zvakanaka, unofana kuona mu `terminal` makanyorwa `nhamba` yezvinhu zviri mu `vanhuMukombi` kuti:
+```
+5
+```
+
+:::info **Tsananguro**
+
+** Pa `Line 2`**:
+- tashandisa `.vangani()` pane `vanhuMukombi` kuti tiwane `nhamba` yevanhu vari mu `list` rako
+-  tobva tagadzira variable inonzi `x`. 
+    - Tagadzira variable iyi nekuti tikuda kuzoinyora mu`terminal` tichishandisa `nyora()`
+
+
+:::
+
+### Kuisa zvinhu mu list
+
+`"Ruvarashe"` auya kuzopinda mukombi, iwewe sa hwindi waakufana kuisa zita rake mu `list` rawagadzira kare rinonzi `vanhuMukombi`. Tarisa pazasi kuti uonoita sei izvi:
+
+
+:::tip Ita: "Ruvarashe" mu list
+1. mu `index.shona` pa `line 3` nyora kuti:
+```
+isa "Ruvarashe" mu vanhuMukombi
+```
+
+**Kana kuti unogona kunyora:**
+
+1. mu `index.shona` pa `line 3` nyora kuti:
+
+```
+vanhuMukombi.isa("Ruvarashe")
+```
+
+2. mu `index.shona` pa `line 4`, nyora kuti: 
+```
+nyora(vanhuMukombi)
+```
+
+3. mu `terminal`, nyora kuti: 
+`node shona.js` wobaya `enter`
+
+4. mu `terminal`, nyora kuti: 
+`node index.js` wobaya `enter`
+:::
+
+ukaita izvi zvakanaka, unofana kuona mu `terminal` makanzi:
+```
+["Panashe", "Tanaka", "Kudzai", "Kupa", "Vimbai", "Ruvarashe"]
+```
+Zvichireva kuti taisa zita ra "Ruvarashe" mu `list` redu zvakanaka, saka mukombi maane vanhu 6
+
+
+<Image source="/img/list1.jpeg"/>
+
+
+Ukateedzera zviri mu _picture_ iyi, unofana kuona mu `terminal` makanzi
+
+```
+["Panashe", "Tanaka", "Kudzai", "Kupa", "Vimbai"]
+["Panashe", "Tanaka", "Kudzai", "Kupa", "Vimbai","Ruvarashe","Tatenda"]
+```
+
+:::info Tsananguro
+Izvi zvinoitika nekuti `nyora()` atumwa ka 2 kunyora mu `terminal`: 
+1. Atumwa kunyora usati waisa `"Ruvarashe"` na `"Tatenda"` mu `list`, saka pekutanga `nyora` anongonyora list riine vanhu 5 chete
+2. Pazotumwa `nyora` pa`line 5`, `"Ruvarashe"` na `"Tatenda"` vanga vaiswa mu `list`, saka `nyora` anobva anyora vanhu vese vari 7 kusanganisira `"Tatenda"` na `"Ruvarashe"`
+
+:::
+
+### Kubvisa zvinhu mu list
+
+`"Kudzai"` asvika kwaanga achienda ne kombi, saka aakuburuka. Iwewe sa hwindi akarongeka, chibvisa zita rake kubva mu `list` rako riye. Tarisa pazasi kuti uone kuti unoita sei
+
+:::tip Ita: bvisa "Kudzai" kubva mu list
+1. mu `index.shona` pa `line 6` nyora kuti:
+```
+bvisa "Kudzai" mu vanhuMukombi
+```
+
+**Kana kuti unogona kunyora:**
+
+1. mu `index.shona` pa `line 6` nyora kuti:
+
+```
+vanhuMukombi.bvisa("Kudzai")
+```
+
+2. mu `index.shona` pa `line 7`, nyora kuti: 
+```
+nyora(vanhuMukombi)
+```
+
+3. mu `terminal`, nyora kuti: 
+`node shona.js` wobaya `enter`
+
+4. mu `terminal`, nyora kuti: 
+`node index.js` wobaya `enter`
+:::
+
+
+<Image  source="/img/list2.jpeg"/>
+
+
+Ukaita izvi zvakanaka, unofana kuona mu`terminal` kuti:
+```
+["Panashe", "Tanaka", "Kudzai", "Kupa", "Vimbai"]
+["Panashe", "Tanaka", "Kudzai", "Kupa", "Vimbai","Ruvarashe","Tatenda"]
+["Panashe", "Tanaka", "Kupa", "Vimbai","Ruvarashe","Tatenda"]
+
+```
+:::info **Tsananguro**
+
+1. `nyora(vanhuMukombi)` wepa `line 2`  ndiye anyora kuti:
+```
+["Panashe", "Tanaka", "Kudzai", "Kupa", "Vimbai"]
+```
+- Apa hatisati taisa vanhu mukombi
+
+2. `nyora(vanhuMukombi)` wepa `line 5`  ndiye anyora kuti:
+```
+["Panashe", "Tanaka", "Kudzai", "Kupa", "Vimbai","Ruvarashe","Tatenda"]
+```
+- Apa tanga taisa `"Ruvarashe"` na `"Tatenda"` mu list pa `line 3` na `line 4`. Taane vanhu 7
+
+
+3. `nyora(vanhuMukombi)` wepa `line 7`  ndiye anyora kuti:
+```
+["Panashe", "Tanaka", "Kupa", "Vimbai","Ruvarashe","Tatenda"]
+```
+- Apa tanga tabvisa `"Kudzai"` kubva mu list pa `line 6`. Tasara ne vanhu 6
+
+:::
+
+### Kutora chinhu kubva mu `list`
+
+Vanhu vari mukombi yako iyi vakagara pamasiti emukombi. Masiti aya ane ma `nhamba`. Vanhu vanowanzotangira kuverenga ma`nhamba` pana `1`, asi `computer` inotangira pana `0` nguva dzese
+:::danger `Computer` inotangira pana `zero`
+Izvi zvakakosha kunzwisisa
+:::
+Iwewe zvawaane vanhu 6 mukombi, uchati vanhu 6 ava vakagara pa masiti 6. Tarisa `list` rako iri:
+
+```
+vanhuMukombi = ["Panashe", "Tanaka", "Kupa", "Vimbai","Ruvarashe","Tatenda"]
+```
+:::info Iwewe unoverenga masiti evanhu seizvi
+- `"Panashe"` aripasiti `1`
+- `"Tanaka"` aripasiti `2`
+- `"Kupa"` aripasiti `3`
+- `"Vmbai"` aripasiti `4`
+- `"Ruvarashe"` aripasiti `5`
+- `"Tatenda"` aripasiti `6`
+:::
+
+Asi `computer` ichatangira pana `zero` kwete pana `1` seizvi:
+
+:::info `Computer` inoverenga masiti evanhu seizvi
+- `"Panashe"` aripasiti `vanhuMukombi[0]`
+    - zvichireva kuti aripasiti rechi`zero`
+- `"Tanaka"` aripasiti `vanhuMukombi[1]`
+- `"Kupa"` aripasiti `vanhuMukombi[2]`
+- `"Vmbai"` aripasiti `vanhuMukombi[3]`
+- `"Ruvarashe"` aripasiti `vanhuMukombi[4]`
+- `"Tatenda"` aripasiti `vanhuMukombi[5]`
+Aya ndiwo matarisiro anoita `computer` zvinhu zviri mu`list`. Unogona kutora chinhu mu `list` ogadzira `variable` kuti uone kuti chii chinoitika
+:::
+:::success **Ita**
+
+1. mu `index.shona`, pazasi pe`code` yawambonyora, nyora kuti 
+```
+munhu = vanhuMukombi[1]
+nyora(munhu)
+``` 
+2. mu `terminal`, nyora kuti: 
+`node shona.js` wobaya `enter`
+
+3. mu `terminal`, nyora kuti: 
+`node index.js` wobaya `enter`
+
+:::
+
+Ukaita izvi zvakanaka, uchaona kuti `nyora()` wekupedzisira anonyora chinhu chiri pa`nhamba` 2 mu `list` rako, kwete pekutanga, nekuti chinhu chekutanga chiri pa `nhamba` 0 kwete 1
+
+
+### Kupinda mu list
+
+Iwewe sa hwindi ane hunhu, ukuda kumhoresa munhu mumwe nemumwe arimukombi yako nezita rake nekuti unoziva mazita avo. Unoita sei?
+Tichaedza kuita izvi nenzira 2, asi wega uchazviona kuti ndezvipi zvirinani.
+
+:::tip Nzira yekutanga: Shandisa `nyora` pane mu wese ari mulist
+1. mu `index.shona` dzima maline ese osiya line rekutanga rakanzi:
+```
+vanhuMukombi = ["Panashe", "Tanaka", "Kudzai", "Kupa", "Vimbai"]
+```
+chinyora pa `line 2` kuti:
+```
+nyora("Hesi Panashe")
+```
+enda pa `line 3` onyora kuti: 
+```
+nyora("Hesi Tanaka")
+```
+enda pane `line` riri kutevera uchidzokorora kumhoresa munhu arimo sezvaitwa pa `line 2` na `line 3`, upedzisire pane `line 6`. Tarisa _picture_ iri pazasi kuti uone maitirwo azvo
+```
+nyora("Vimbai")
+```
+:::
+
+
+<Image source="/img/list3.jpeg"/>
+
+
+<Question text="Ko kana mu list mangu muine vanhu 1000?" />
+
+Kana mu list mako muine vanhu 1000, zvinoreva kuti kana uchida kuvamhoresa vese nenzira iyi, uchanyora ma line 1000 mu `index.shona` uchimhoresa munhu mumwe ne mumwe.
+
+<Question text="Ma line 1000 aya akawandisa, hapana here imwe nzira inoita kuti tinyore ma line mashoma mu code yedu?"
+/>
+
+:::info Nzira yechipiri: Kupinda mu list
+Kunonzi kupinda mu list, zvinoreva kuti tanga pane chinhu chekutanga mu list otuma `computer` kuita zvauri kuda, oenda pane chechipiri, zvichingodaro kusvika pane chekupedzisira.
+
+Tiri kuda kutuma `computer` kupinda mulist. Unopinda sei? Chimbotarisa manyorero ataita pazasi:
+
+
+<Image source="/img/list4.jpeg" />
+
+
+
+:::
+
+**Chii chikuitika pa line 2?**
+:::info Tsananguro: Kupinda mu list
+Tiri kuti `pane ___ mu ___ {`. Apa tine 2 ma `___`
+1. `___` wekutanga anomirira `variable` inopinda mu `list` 
+- variable inopinda mu `list` inonyorwa semanyorerwo anoitwa ma `variables` akataurwa mu _topic_ yema `variables`. Asi apa kutongonyora `variable` yekuti `munhu` ndiko kutoigadzira kwacho, saka `computer` inonzwisisa kuti apa wagadzira variable ichapinda mu `list` rako
+2. `___` wechipiri anomirira zita re`list` rako raukuda kupinda mariri
+3. Ma _curly brackets_ `{}` anoudza `computer` kuti kana yapinda mulist, ishandise `code` irimo muma _curly brackets_ aya
+
+
+
+**Ko pana Line 3?**
+
+`Line 3` arimuma _curly brackets_ saka zvinoreva kuti `computer` ichasandisa `code` iyi kana ichinge yapinda mu `list` rako re `vanhuMukombi`.
+```
+nyora("Hesi ", munhu)
+```
+Apa `nyora()` apihwa zvekunyora zviri 2: `"Hesi "` na `munhu`.
+1. `"Hesi "` arimuma _quotes_, zvichireva kuti `mashoko` saka `computer` inonzwisisa kuti "Hesi " achanyorwa mu `terminal` sezvaari
+2. `munhu` haasi mu ma _quotes_, zvichireva kuti haasi `mashoko`, uye haisi `nhamba`, saka `computer` inonzwisisa kuti `munhu` i `variable`
+- `computer` ichatsvaga kuti `variable` inonzi `munhu` inopinda mu `list` yambogadzirwa here? Hongu, yagadzirwa pa `line 3`
+
+
+
+**Kana computer yapinda mu`list`**
+
+Kana `computer` yapinda mu list rako, inotanga pane chinhu chekutanga mulist rako. Saka apa inotanga pana `"Panashe"`. 
+Kana computer iri pana `"Panashe"`, `variable` inonzi `munhu` ichachinja kuita `"Panashe"`. 
+```
+munhu = "Panashe"
+```
+Computer paichashandisa `line 3`
+```
+nyora("Hesi ", munhu)
+```
+Apa `munhu` ndi `"Panashe"`, saka mu `terminal` muchanyorawa kuti 
+`Hesi Panashe`.
+
+Kana `computer` yapedza kushandisa code iri muma _curly brackets_`{}` pana `"Panashe"`, ichaenda pane chinhu chiri kutevera mu `list` rako yoita sezvayaita pana `"Panashe"`. Saka variable `munhu` ichachinja kuita `munhu = "Tanaka"` yonyora `nyora("Hesi ",munhu)`, zvichingodaro kusvika yapedza nevanhu vese vari mulist rako
+:::
+
+### Kutsvaga chinhu mu list
+ 
+Unogona kutsvaga chinhu mu `list` uchishandisa`.muna()`, kana kuti `irimu`.
+Ngatimboti iwewe ukuda kutsvaga kuti "Kudzai" arimu kombi here pa `list` rako, unoita seizvi:
+
+
+<Image source="/img/list8.jpeg" />
+
+
+:::info **Chii chikuitika apa?**
+
+
+**Pa `line 3` na `line 4`**
+```
+arimoHere = vanhuMukombi.muna(munhuAkutsvagwa)
+arimoHere = munhuAkutsvagwa irimu vanhuMukombi
+```
+
+Zvikuitika apa zvakangofanana, pa `line 2`, tagadzira `variable` ye `munhuAkutsvagwa`, tobva tati ndi `"Kudzai"`. 
+
+Pa `line 3`, tiri kuudza `computer` kuti tarisa mu `vanhuMukombi` kuti `muna` `variable` inonzi `munhuAkutsvagwa` here, `munhuAkutsvagwa` wacho ndi `"Kudzai"` agadzirwa pa `line 2` 
+
+Pa `line 4`, tangoita zvakafanana nepa `line 3`, asi tikuudza `computer` kuti tarisa `variable` inonzi `munhuAkutsvagwa` kuti `irimu` `vanhuMukombi` here. Iwewe unoshandisa line 3 kana line 4, zvichienderana nezvawanzwisisa
+:::
+
+:::tip Ita
+
+Nyora `code` iyoyi mu `index.shona`, wochiita izvi:
+
+1. mu `terminal`, nyora kuti: 
+`node shona.js` wobaya `enter`
+
+2. mu `terminal`, nyora kuti: 
+`node index.js` wobaya `enter`
+
+:::
+
+Ukaita izvi zvakanaka, unofana kuona mu `terminal` makanzi:
+```
+true
+```
+
+`true` zvinoreva kuti `chokwadi`, zvechokwadiwo "Kudzai" arimo mu `vanhuMukombi`. 
+
+:::danger 
+Chimboedza kuchinja pana `munhuAkutsvagwa = "Kudzai"`, woisa `munhuAkutsvagwa = "Kudzi"`. Wodzokora zvawaita pamusoro apa. 
+Unofana kuona mu `terminal` makanzi: 
+
+```
+false
+```
+`false` zvinoreva kuti `kunyepa`
+
+`
+:::
+
+### Kujamba chinhu mu list
+
+Ngatimboti iwewe sa hwindi wakavenga "Kupa", saka ukuda kuti ukasvika pana "Kupa" mu `list`, orega kumumhoresa, ongonyarara. Unoita sei? Pane nzira 2 dzekuita izvi
+
+:::info Nzira1: Unoshandisa `kana`, `enzaniso`, na `jamba` 
+:::
+
+
+<Image source="/img/list5.jpeg" />
+
+
+**Chii chikuitika apa?🤯**
+
+:::info Tsananguro
+**Line 1**
+Iri ndiro `list` rako riye revanhu vari mukombi
+
+**Line 2**
+```
+munhuWandakavenga = "Kupa"
+```
+Apa tagadzira `variable` inonzi `munhuWandakavenga`, tobva tati variable iyoyo ndi `"Kupa"`. 
+
+**Line 3**
+```
+pane munhu mu vanhuMukombi {
+```
+Apa tikupinda mu `list` redu riye sezvatamboita kumashure.
+
+**Line 4**
+
+```
+kana munhu yakafanana na munhuWandakavenga {
+```
+Apa tatove mu `list` kare, saka tine `variable` inonzi `munhu`, ichange ichichinja patinenge tichifamba kubva pane chinhu chekutanga mu `list` kusvika pane chekupedzisira. 
+Tiri kuudza `computer` kuti kana `variable` `munhu` yachinja kuita `munhu = "Kupa"`, inobva **yafanana na** `munhuWandakavenga`. Kana izvi zvichinge zvaitika, `computer` inofana ku `jamba` munhu iyeye. 
+
+Ku`jamba` apa zvinoreva kuti `computer` icharega kushandisa `code` yese ichatevera kumberi kwa `jamba` muma_brackets_ a `kana`, yobva yaenda pane munhu arikutevera mu `list`
+:::
+
+:::success Ita
+Nyora `code` iyoyi mu `index.shona`, wochiita izvi:
+
+1. mu `terminal`, nyora kuti: 
+`node shona.js` wobaya `enter`
+
+2. mu `terminal`, nyora kuti: 
+`node index.js` wobaya `enter`
+:::
+Ukaita masteps aya zvakanaka, uchaona mu `terminal` makanzi
+```
+Hesi Panashe
+Hesi Tanaka
+Hesi Kudzai
+Hesi Vimbai
+```
+`"Kupa"` achajambwa ne `computer`, nekuti wakamuvenga.
+
+:::info Nzira imwe yeku jamba chinhu mu list
+Tinoshandisa `kana`, `zvimwe`, ne `enzaniso`
+:::
+
+
+<Image source="/img/list6.jpeg" />
+
+
+**Chii chikuitika apa?🤯**
+
+:::info Tsananguro
+
+Apa tashandisa `kana` na `zvimwe`, kana usina kunzwisisa kuti `kana` na `zvimwe` vanoshanda sei, unokurudzirwa kuverenga _topic_ ya [Kana, Zimwe](/docs/guide/conditionals). Unogona kubvunza pa whatsapp mugroup kuti ubatsirwe.
+
+Tikuudza `computer` kuti ichinge yapinda mu `list`, `kana` variable inonzi `munhu` yakafanana na `munhuWandakavenga`, hapana zvaunoita. Hatina kuisa `code` muma _curly brackets_ epana `kana` zvichireva kuti `computer` hapana zvainoita kana tikasvika pane `munhuWandakavenga`.
+Asi kana `varibale` inonzi `munhu` isina kufanana ne variable inonzi `munhuWandakavenga`, `computer` ichashandisa `code` iri muma _brackets_ `{}` a `zvimwe`. 
+
+:::
+
+:::success Ita
+Nyora `code` iyoyi mu `index.shona`, wochiita izvi:
+
+1. mu `terminal`, nyora kuti: 
+`node shona.js` wobaya `enter`
+
+2. mu `terminal`, nyora kuti: 
+`node index.js` wobaya `enter`
+:::
+
+Ukaita masteps aya zvakanaka, uchaona mu `terminal` makanzi
+```
+Hesi Panashe
+Hesi Tanaka
+Hesi Kudzai
+Hesi Vimbai
+```
+`"Kupa"` achajambwa ne `computer` zvekare, nekuti wakamuvenga
+
+
+### Kubuda mulist 
+
+Kana `computer` ichinge yapinda mu `list`, inotangira pane chinhu chekutanga kusvika pane chinhu chekupedzisira chiri mu `list` imomo. 
+
+<Question text="Ko kana uchida kubuda mulist usati wapedza zvinhu zvese zvirimo " />
+
+Unoshandisa `buda` kubuda mu `list`. Ngatomboti iwewe ukuda kumhoresa vanhu 3 chete varimukombi yako iya, obva wanyarara hako, nekuti haudi zvekunyanya kutaura taura.
+
+:::note Ngatironge kuti tichaita sei?
+1. Tichapinda mu`list`
+- Apa tichashandisa `code` iya yekupinda mu `list`
+2. Tichada kuverenga kuti tave pane munhu wechi `3` here
+- apa tichashandisa `maths`, uchazoona zvedzimwe maths kumberi uku
+3. Kana tave pane munhu wechi `3`, tichabva `tabuda` mu `list`
+- apa tichashandisa `buda`
+:::
+
+Tinonyora code iyi seizvi:
+
+
+<Image source="/img/list9.jpeg"/>
+
+
+:::info **Chii chikuitika apa?**
+
+**Pa `line 2` na `line 3`**
+
+- Tagadzira `variable` inonzi `nhambaYeVanhu` pa `line 2`. `Variable` iyi i `nhamba` yatichange tichiwedzera pakuverenga vanhu tapinda mu `list`. `nhambaYeVanhu` iyi ichange ichiwedzera na `1` kana tabva pane munhu wekutanga tichienda pane munhu wechipiri, zvichingodaro. 
+- Tagadzira `variable` inonzi `nhambaYekubuda` pa `line 3`, bvatati `nhamba` iyi ndi 3. Tichada kuzo `enzanisa` `variable` iyi ne `variable` ye `nhambaYeVanhu` ichange ichiwedzera kubva pana 0 zvichienda mberi
+
+
+
+**Pa `line 4`**
+- Apa tanyora `code` yekupinda mu `list` re `vanhuMukombi`
+
+
+**Pa `line 5` na `line 6`**
+- Tikuda kuwedzera `nhambaYeVanhu` na `1` kana tave kufamba kubva pane chinhu chimwe ne chimwe mu `list`. 
+- Patinopinda mu `list`, tinotanga tiri pane munhu wekutanga, saka apa tikuudza `computer` kuti `nhambaYeVanhu` ngaiwedzere na `1` kubva pana `0`, saka yave `1`
+- Pa `line 6`, tikuudza `computer` kuti `nyora()` zvinhu 3:
+    1. `"Hesi "` - aya mashoko anonyora wezvaari
+    2. `munhu` - i `variable` yekupinda mu `list`, saka panonyorwa zita remunhu
+    3. `nhambaYeVanhu` - i `variable` ichange ichiwedzera na `1` sekufamba kwatinenge tichiita kubva pane `munhu` wekutanga mu `list` tichienda mberi
+
+**Pa `line 7` , `line 8`, na `line 9`**
+- Apa tikushandisa `enzaniso` kuenzanisa `nhambaYeVanhu` na `nhambaYekubuda`, **kana** `nhambaYeVanhu` yawedzera kusvika pana `3` inobva yafanana na `nhambaYekubuda`, saka enzaniso iyi inoita `chokwadi`. 
+- Kana `enzaniso` yaita `chokwadi`, `computer` inobva yashandisa `code` irimuma _brackets_ `{}` epa `kana`.
+- `code` ichashandiswa ne `computer` kana `enzaniso` iri `chokwadi` ndi `buda`. Izvi zvinoreva kuti chibuda mu `list`, chingosiyana nezvasara kumberi
+
+:::
+
+:::tip Ita
+Nyora `code` iyoyi mu `index.shona`, wochiita izvi:
+
+1. mu `terminal`, nyora kuti: 
+`node shona.js` wobaya `enter`
+
+2. mu `terminal`, nyora kuti: 
+`node index.js` wobaya `enter`
+:::
+
+Ukaita izvi zvakanaka, uchaona mu `terminal` makanzi:
+
+```
+Hesi Panashe 1
+Hesi Tanaka 2
+Hesi Kudzai 3
+```
+ma `nhamba` aya ekumberi kwemazita ndiwo `nhambaYeVanhu` iri kuwedzera kana tapinda mu `list`. `nhamba` iyi paichaita `3`, `computer` ichabva yabuda mu `list`, ndosaka mamwe mazita asina kuzonyora mu `terminal`, nekuti tanga tatobuda kare mu `list`
 
 export const Image = ({source}) => (
     <div style={{backgroundColor:"", textAlign: "center"}}>
@@ -19,5 +614,15 @@ export const Image = ({source}) => (
                 <img src={source} style={{borderRadius: "10px", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px"}} width="95%"></img> 
         </div>
     </div>
- 
 );
+
+export const Question = ({text}) =>    (
+        <div style={{display: "flex",alignItems:"center",  width: "80%", minHeight: "100px", backgroundColor: "#FFEDC4", borderRadius: "10px", padding: "5px", margin: "auto", border: "solid", borderWidth: "1px", borderColor: "rgba(0,0,0,0.1)", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px", marginBottom: "10px"}}>
+         <div style={{flex: 2, fontSize: "14px"}}>{text}</div> 
+        <div style={{flex: 1, display:'flex', alignItems: "center"}}>
+            <img src="/img/question (1).png" height="100px">
+            </img>
+        </div>
+        </div>
+    )
+
