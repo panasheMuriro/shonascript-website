@@ -1,0 +1,125 @@
+---
+sidebar_position: 15
+---
+
+# Mhinduro
+:::caution Not yet Revised
+:::
+
+Unogona kuda kunyora `code` inoita kuti munhu apindure mu `terminal`, sokuti unogona kuda kuti munhu anyore zita rake mu `terminal`, iwewe wozotora zita iroro oita zvaunoda naro zvakaita seku mhoresa munhu iyeye. Tarisa pazasi apa, uone kuti izvi zvinotwa sei:
+
+Kuita izvi, tinoshandisa zvinhu 2:
+1. `teerera mhinduro _`
+2. `tora mhinduro _ {`
+
+
+<Image source="/img/mhinduro1.jpeg" />
+
+**Chii chikuitika apa?🤯**
+
+
+:::info Tsananguro
+**Line 1**
+```
+teerera mhinduro zita
+```
+Tiri kuudza `computer` kuti iteerere zvichanyorwa mu `terminal`. Kana yateerera zvichanyorwa, ichabva yagadzira `variable` inonzi `zita`. `zita` apa ndizvo zvese zvichanyorwa mu `terminal`.
+ 
+**Kubva pa `line 3` kuzvika pa `line 5`**
+Apa taakuudza `computer` kuti tora mhinduro yanyorwa mu `terminal` ine variable rekuti `zita`, obva wa `nyora` kuti `"Hesi ", zita`
+
+
+:::
+
+:::success Ita
+Nyora `code` iyoyi mu `index.shona`, wochiita izvi:
+
+1. mu `terminal`, nyora kuti: 
+`node shona.js` wobaya `enter`
+
+2. mu `terminal`, nyora kuti: 
+`node index.js` wobaya `enter`
+
+```
+mhinduro: zita: 
+```
+Izvi zvinoreva kuti `computer` yakamirira iwewe kuti unyore `zita` rako kana chero rimwe `zita` raukuda kunyora, mobva wabaya `enter`.
+Ukaita izvi, uchaona mu `terminal` makanzi:
+
+::: 
+
+Ukaita izvi, ukanyora muterminal zita racho, unofana kuona mu `terminal` makanzi 
+
+```
+Hesi (zita rawanyora iwewe)
+```
+
+### Waakushanda kuzvitupa zvekare
+
+Takambokupa `basa` rekuudza vanhu vauya kuzotora zvitupa kuti vaende ku _Office_ kunotora chitupa `kana` vaine makore 16 zvienda mberi, kana kuti vaende kumba `kana` vaine makore 15 zvichidzika _mutopic_ ye [enzaniso](/docs/guide/conditionals). Patanyora `code` yezvitupa, takagadzira `variable` inonzi `makoreEmunhu` tikabva taipa makore acho iri `nhamba`. Kana wakanganwa, tarisa pazasi apa `code` yacho yese yatakanyora
+
+<Image source="/img/kana2.jpeg"/>
+
+
+<Question text="Unoita sei kana uchida kushandisa mhinduro kuwana makore emunhu"/>
+
+**Chiita uchishandisa `mhinduro`**
+
+Apa taakuda kunyora `code` iyi zvekare, asi ikozvino pane kuti ugadzire variable yekuti `makoreEmunhu` sezvawakaita pa `enzaniso`, uchagadzira variable iyoyo uchishandisa `teerera mhinduro` seizvi:
+
+```
+teerera mhinduro makoreEMunhu
+```
+
+`computer` ichamirira kuti makore emunhu anyorwe mu `terminal`, iwewe wobva watora mhinduro iyoyo ochishandisa `code` iri kubva pa`line 4` kusvika pa `line 8` mu _picture_ iri pamusoro apo. Kana wapedza, code yako inofana kuita seizvi:
+
+<Image source="/img/mhinduro2.jpeg" />
+
+:::success Ita
+Nyora `code` iyoyi mu `index.shona`, wochiita izvi:
+
+1. mu `terminal`, nyora kuti: 
+`node shona.js` wobaya `enter`
+
+2. mu `terminal`, nyora kuti: 
+`node index.js` wobaya `enter`
+
+```
+mhinduro: makoreEMunhu: 
+```
+
+
+Izvi zvinoreva kuti `computer` yakamirira iwewe kuti unyore `makoreEmunhu`. Saka nyora kuti `nhamba` yemakore acho,  wobva wabaya `enter`.
+
+Ukanyora `nhamba` iri pasi pa 16 sokuti 12, mu`terminal` munofana kunyora kuti: 
+
+```
+Uchiri mudiki, unozodzoka waane makore 16
+```
+Asi ukanyorawo `nhamba` iri pamusoro pa 16 sokuti 21, mu`terminal` munofana kunyorwa kuti:
+```
+Enda ku Office kunotora chitupa
+```
+:::
+
+
+
+
+export const Image = ({source}) => (
+    <div style={{backgroundColor:"", textAlign: "center"}}>
+        <div style={{ width:"90%" }}>
+                <img src={source} style={{borderRadius: "10px", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px"}} width="95%"></img> 
+        </div>
+    </div>
+ 
+);
+
+export const Question = ({text}) =>    (
+        <div style={{display: "flex",alignItems:"center",  width: "80%", minHeight: "100px", backgroundColor: "#FFEDC4", borderRadius: "10px", padding: "5px", margin: "auto", border: "solid", borderWidth: "1px", borderColor: "rgba(0,0,0,0.1)", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px", marginBottom: "10px"}}>
+         <div style={{flex: 2, fontSize: "14px"}}>{text}</div> 
+        <div style={{flex: 1, display:'flex', alignItems: "center"}}>
+            <img src="/img/question (1).png" height="100px">
+            </img>
+        </div>
+        </div>
+    )

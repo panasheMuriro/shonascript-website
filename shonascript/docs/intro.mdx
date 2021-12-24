@@ -1,0 +1,141 @@
+---
+sidebar_position: 1
+---
+
+# ShonaScript Chii?
+
+:::caution Not yet Revised
+:::
+
+ShonaScript i **programming language** inokubatsira kuti udzidzire kunyora **code** ne **shona**, kana usati wambonyora `code` zvachose.
+
+:::info tsananguro
+ **programming language** - _i language inonzwisiswa ne computer_
+
+ **code** - _ma words, ma numbers, kana ma special characters akaita se ma brackets aya "{},()" anoshandiswa mu programming language_
+
+ **shona** - _i language inoshandiswa ne mamwe ma Zimbabweans pakutaura_
+
+:::
+
+
+
+## Zvii zvinodiwa?
+
+Kuti ugone kutanga kunyora `code` ne ShonaScript, panodiwa: 
+1. Computer 💻 - yekunyorera `code`
+2. Internet 🌍 - inongodiwa _pakudownloader_ ma _files_ nezvimwe zvaunozoshandisa
+
+## Tanga Pano 👇🏾
+
+Teedzera _masteps_ aya anodiwa kuti ugone kushandisa `ShonaScript`. Kana uchida kubatsirwa, unokurudzirwa kutaura _mugroup_ re _whatsapp_
+
+### STEP 1: Node JS
+:::success Download Node JS
+Unofana kudownloader `software` inonzi `Node JS` kana usati wamboidownloader. `Node JS` inogona kukura zve `55MB`
+1. Enda ku https://nodejs.org/en/download/, wo downloader Node JS inoenderana ne `computer` yaunoshandisa. Unoona paine `windows`, kana `macOS`
+
+<Image source="/img/node.png"/>
+
+Unogona kuona `video` riripazasi apa kana uchikwanisa. `Video` iri harina kugadzirwa nesu, asi kana usiri kunzwisisa zvikuitika, bvunza mu _group_ re _whatsapp_
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JINE4D0Syqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+2. Kana uchishandisa `Windows` unoenda mu `command prompt`, kana uchishandisa `macOS`unoenda mu `terminal`:
+    1. Enda mu `command prompt` / `terminal`
+    2. Nyora kuti `node -v`
+    - unofana kuona `nhamba` inotanga na "v" sokuti `v16.13.1`
+    - kana usiri kuona `nhamba` iyi, unogona kuvhara `command prompt`/`terminal`, oivhura oedza zvekare kuti `node -v`
+    - kana usati waakuona `nhamba`, zvinoreva kuti hauna kugadzira `NodeJS` zvakanaka, saka taura mu group rewhatsapp, ubatsirwe.
+
+3. Paku installer `Node JS`, chingobaya `continue` kana `next` kusvika waaku installer. Usachinje chinhu. 
+:::
+
+
+### STEP 2: VS Code
+ Uchashandisa `VS Code` kunyora `code` yako. Usashandise imwe `editor` kunze kwe `VS Code`, nekuti `VS Code` ndiyo inokwanisa kuona `ShonaScript`. 
+
+:::success Download VS Code
+`VS Code` inogona kukura zve `171MB`
+1. Enda ku https://code.visualstudio.com/, wo downloader `VS Code` inoenderana ne `computer` yaunoshandisa
+
+<Image source="/img/vscode.png" />
+
+Unogona kuona `video` iri kana uchikwanisa:
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MlIzFUI1QGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+
+### STEP3: Gadzira Folder "shonascript"
+
+:::success Gadzira Folder reShonaScript
+1. Enda mudesktop `folder` mako, ogadzira `folder` rakanzi `shonascript`
+2. Vhura VS Code, woenda pamusoro pakanzi `file`
+ - chienda pakanzi `Open Folder`, wotsvaga folder rako rawagadzira mu desktop rakanzi `shonascript`
+<Image source="/img/open2.jpeg" /> 
+3. Kana pakabuda pakanzi `do you trust the authors`, unoti `yes`
+:::
+
+
+### Step 4: ShonaScript
+:::tip
+1. mu `VS Code`, enda pama `extensions`:
+<Image source="/img/extension.jpeg" />
+
+Onyora mu `search box` kuti `ShonaScript`, unofana kuona `ShonaScript` semu picture iri pamusoro apa. Wa downloader inonzi `syntax highlighter` apa.
+
+2. vhura `terminal` mu `VS Code`
+<Image source="/img/terminal.jpeg" />
+- Unofana kuona `terminal` pasi pescreen rako
+
+<Image source="/img/terminal2.jpeg" />
+
+3. Mu `terminal`:
+    - nyora kuti `npm i shona -g`, wobaya `enter`
+    - kana ukaona mu `terminal` makanzi `npm ERR`, ne `red`, edza kunyora: `sudo npm i shona -g`, wobaya `enter`
+    - chinonzi `shona` ndicho chinokubatsira kugadzira mafiles anodiwa
+
+4. Mu `terminal`:
+    - nyora kuti `shona hesi` wobaya `enter`
+    - unofana kuona izvi mu `terminal` :
+
+<Image source="/img/cli.jpeg" />
+
+5. Ukatarisa mu `folder` rako rawagadzira riya mu `VS Code`, unofana kuona kuti `ShonaScript` yagadzira mafiles 4:
+    - `index.shona` - ndomauchanyora `code`
+    - `index.js` - usanyore chinhu umu 
+    - `shona.js`  - usanyore chinhu umu 
+    - `package.json` - usanyore chinhu umu 
+
+6. Mu `terminal` zvekare, nyora kuti `npm i shonascript`, wobaya `enter`
+    - Unofana kuona mu folder rako rave ne zvinhu izvi:
+        - folder rakanzi `node_modules`, usaribate
+        - file rimwe rakanzi `package_lock.json`, usaribate
+
+7. Chipinda mu `file` rakanzi `index.shona`, unofana kuona pazasi mu `VS Code` makanzi `Shonascript` seizvi:
+
+<Image source="/img/shonascript.jpeg"/>
+
+- izvi ndizvo zvinoreva kuti waakukwanisa kushandisa `ShonaScript`
+
+8. Mu `index.shona`, dzima `line 1` wonyora kuti `nyora("Goodluck Zimbabwe")` pa `line 1` ipapo
+
+9. Mu `terminal`, nyora kuti `node shona.js`, wobaya `enter`. Unofana kusaona ma line e `red` mu `terminal` kana `code` yako ichishanda.
+
+10. Mu `terminal`, nyora kuti `node index.js`, wobaya `enter`. Unofana kuona mu`terminal` imomo makanzi `Goodluck Zimbabwe`.
+:::
+
+---
+**Makorokoto🎉, wanyora `code` yako yekutanga ne `ShonaScript`🇿🇼**
+
+Chienda kumberi udzidze kuti `code` yemu `ShonaScript` inonyorwa sei
+
+export const Image = ({source}) => (
+    <div style={{backgroundColor:"", textAlign: "center"}}>
+        <div style={{ width:"90%" }}>
+                <img src={source} style={{borderRadius: "10px", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px"}} width="95%"></img> 
+        </div>
+    </div>
+ 
+);

@@ -4,8 +4,7 @@ sidebar_position: 2
 
 # Nyora
 
-:::danger Waiting For December 24
-More information will be available after 24 December 2021
+:::caution Not revised yet
 :::
 
 ## Nyora Chii?
@@ -17,23 +16,33 @@ Nyora i `function` yaunotuma kuita `basa` rekunyora zvinhu mu`terminal`. Unozonz
 
 <Image source="/img/nyora1.jpeg"/>
 
-Chii chikuitika apa?
-Nyora anotumwa zvekunyora zvacho zviri muma brackets _()_.
-Tichatarisa `line` rimwe ne rimwe tichiedza kunzwisisa kuti zvii zvikuitika. Ma `line` atiri kutaura ndiwo ari mu picture iri pamusoro apa
 
+**Chii chikuitika apa?🤯**
+
+Nyora anotumwa zvekunyora zvacho zviri muma brackets _()_.
+Tichatarisa `line` rimwe ne rimwe tichiedza kunzwisisa kuti zvii zvikuitika. Ma `line` atiri kutaura ndiwo ariku _left_ mu _picture_ iri pamusoro apa 
+
+:::info Tsananguro
 **Line 1**
 ```
 nyora("Hesi")
 ```
 Apa `nyora()` apihwa mashoko ekunyora, mashoko acho ndi "Hesi". "Hesi" apa anotariswa ne `computer` semashoko nekuti akaiswa mumaquotes _""_. Kana computer ichinge yatumwa kunyora mashoko, inongonyora mashoko sezvaari.  Saka Ukateedzera ma steps aya wega: 
+:::
 
-:::info Masteps ekushandisa `nyora()`
+:::success Ita
 1. mu file rakanzi `index.shona`, nyora kuti `nyora("Hesi")`
 2. mu `terminal` nyora kuti `node shona.js`, wobaya `enter`
 3. mu `terminal` zvekare, nyora kuti `node index.js`, wobaya `enter`
 :::
-Ukaita masteps aya zvakanaka, unofana kuona muterminal makanyorwa kuti `Hesi`. Makorokoto, wagona kushandisa `nyora()`
 
+Ukaita masteps aya zvakanaka, unofana kuona muterminal makanyorwa kuti 
+```
+Hesi
+```
+Kana ukaona izvi, wagona kushandisa `nyora()`
+
+:::info Tsananguro
 **Line 2**
 ```
 nyora(2021)
@@ -42,8 +51,11 @@ Apa nyora apihwa `nhamba` yekunyora. `Nhamba` yacho ndi `2021`.
 
 <Question text='Computer inozvinona sei kuti inhamba? Ko sei usina kuisa ma quotes kuti `nyora("2021")`?' />
 
-`Computer` inozviona kuti i `nhamba` kana iri `nhamba` chaiyo isina kuiswa muma quotes. Uchazonzwisisa tsananguro yema _quotes_ ukaramba uchiverenga. Panguva ino dzokorora ma steps 3 ambotaurwa pamusoro apo, asi nyora kuti `nyora(2021)` panzvimbo ya `nyora("Hesi")`. 
-Unofana kuona kuti 2021 mu `terminal`
+`Computer` inozviona kuti i `nhamba` kana iri `nhamba` chaiyo isina kuiswa muma _quotes_`""`. Uchazonzwisisa tsananguro yema _quotes_ ukaramba uchiverenga. Panguva ino dzokorora ma **steps 3** ambotaurwa mu _box_ re _green_ pamusoro pana **Ita**, asi nyora kuti `nyora(2021)` panzvimbo ya `nyora("Hesi")`. 
+Unofana kuona mu `terminal` makanzi:
+```
+2021
+```
 
 **Line 4 na Line 5**
 ```
@@ -51,29 +63,35 @@ zitaRangu = "Panashe"
 nyora(zitaRangu)
 ```
 
-Apa tatanga nekugadzira `variable`. Kana usati waakunzwisisa kuti `variable` chii, unogona kuverenga nezvawo kumashure kune _topic_ yema `variable`. `Variable` yagadzirwa apa ndi `zitaRangu`, ichibva yanzi ndi `"Panashe"`. Unogona kubvisa pakanzi "Panashe", oisa zita rako riri muma _quotes_. Usasiye maquotes, nekuti hazvishande.
+Apa tatanga nekugadzira `variable`. Kana usati waakunzwisisa kuti `variable` chii, unogona kuverenga nezvawo kumashure kune _topic_ yema `variable`. `Variable` yagadzirwa apa ndi `zitaRangu`, ichibva yanzi ndi `"Panashe"`. Unogona kubvisa pakanzi `"Panashe"`, oisa zita rako riri muma _quotes_. Usasiye _maquotes_, nekuti hazvishande.
 
-Izvi zvinoreva kuti tikazotuma `computer` kunotsvaga `variable` inonzi `zitaRangu`, inofana kudzoka na `"Panashe"`. Saka pa `line 5`, pakuudza computer kuti `nyora(zitaRangu)`, ichaona kuti `nyora()` uye apihwa zvekunyora, asi zvekunyora zvacho hazvisi kuma _quotes_, saka haasi mashoko. `Computer` ichatarisa kuti kana asiri mashoko, saka i `nhamba` here? Kwete. 
+Izvi zvinoreva kuti tikazotuma `computer` kunotsvaga `variable` inonzi `zitaRangu`, inofana kudzoka na `"Panashe"`. Saka pa `line 5`, takuudza `computer` kuti `nyora(zitaRangu)`, ichaona kuti `nyora()` uye apihwa zvekunyora, asi zvekunyora zvacho hazvisi kuma _quotes_, saka haasi `mashoko`. `Computer` ichatarisa kuti kana asiri mashoko, saka i `nhamba` here? **Kwete**. 
 
 Saka zvaakureva kuti nyora apihwa `variable`.
-`Variable` ichatsvagwa kumashure kuti wamboigadzira here. Saka apa, hongu, waigadzira `zitaRangu = "Panashe"` pa `line 4`. Ukaita ma steps 3 aye ekumashure uku, unofana kuona mu `terminal` makanzi `Panashe`.
-Please, bvisa pakanzi "Panashe" uise zita rako ahahaha😂
+`Variable` ichatsvagwa kumashure kuti wamboigadzira here. Saka apa, hongu, waigadzira `zitaRangu = "Panashe"` pa `line 4`. Ukaita ma **steps 3** aye ari mu _box_ rakanzi **Ita** pamusoro apa, unofana kuona mu `terminal` makanzi:
+```
+Panashe
+```
+Bvisa pakanzi `"Panashe"` uise zita rako 😂
 
 **Line 7**
 
-Sekutsanangurwa kwaitwa pana `line 4 na line 5`, apa `nyora()` apihwa zvekunyora, asi zvekunyora zvacho i `variable`. `Computer` ichatsvaga `variable` inonzi `zitaRake` kumusoro kwe code yako, yobva yaishaya. Saka ukada kudzokorora ma steps 3 aye akumashure uku, uchona kuti pauchanyora mu terminal kuti `node shona.js`, uchanzi:
-:::danger Paita Problem
+Sekutsanangurwa kwaitwa pana `line 4 na line 5`, apa `nyora()` apihwa zvekunyora, asi zvekunyora zvacho i `variable`. `Computer` ichatsvaga `variable` inonzi `zitaRake` kumusoro kwe `code` yako, yobva yaishaya. Saka ukada kudzokorora ma **steps 3** aye ekumashure uku, uchona kuti pauchanyora mu terminal kuti `node shona.js`, uchanzi:
+
+```
 Paita problem, `zitaRake` haasi kuzivikanwa paline 7
+```
 :::
+
 
 ## Zvinobvumidzwa muna `nyora()`
 Saka zvii zvinobvumidzwa muma _bracket_ a `nyora()`.
 
-:::info Zvinobvumidzwa muma brackets 
+:::success Zvinobvumidzwa muma brackets 
 1. **mashoko**
-- zvinhu zvese zvaiswa muma quotes chero zvisingareve chinhu zvinotariswa ne computer se mashoko
+- zvinhu zvese zvaiswa muma _quotes_ chero zvisingareve chinhu zvinotariswa ne `computer` se `mashoko` saka zvinongonyorwa zvakadaro
 2. **nhamba**
-- nhamba inonyorwa iri _one_. Kuti `nyora(20 21)` hazviite nekuti 20 na 21 atove ma `nhamba` akasiyan ari 2. Uchazoona pazasi kuti kana uchida kunyora zvinhu zvakasiyana siyana muma brackets a `nyora()` unoita sei
+- nhamba inonyorwa iri _one_. Kuti `nyora(20 21)` hazviite nekuti 20 na 21 atove ma `nhamba` akasiyana ari 2. Uchazoona pazasi kuti kana uchida kunyora zvinhu zvakawanda uye zvakasiyana siyana muma brackets a `nyora()` unoita sei
 3. **ma** `variables`
 - kana usati waakunzwisisa kuti ma varibles chii, enda kumashure kune _topic_ yema `varables` kuti ugonzwisisa
 :::
@@ -82,14 +100,18 @@ Saka zvii zvinobvumidzwa muma _bracket_ a `nyora()`.
 
 <Question text="Ko kana uchida kuti nyora() anyore zvakawanda, unoita sei?"/>
 
-Kunyora zvakawanda kwatiri kutaura apa ndiko kutuma nyora kuti anyore zvakawana panguva imwe chete. 
-Ngatimboti iwewe ukuda kuti `nyora()` anyore ma nhamba 2. 
+Kunyora zvakawanda kwatiri kutaura apa ndiko kutuma `nyora()` kuti anyore zvakawana panguva imwe chete. 
+Ngatimboti iwewe ukuda kuti `nyora()` anyore ma `nhamba` 2. 
 Manhamba acho ndi 2021 na 2022, unonyora sei?
+
 
 <Image source="/img/nyora3.jpeg"/>
 
-Chii chikuitika apa?
 
+**Chii chikuitika apa? 🤯**
+
+
+:::info Tsananguro
 Kana uchida kuti `nyora()` anyore zvakawanda, unoisa ma `comma,` pakati pezvinhu zvacho zvaukuda kuti anyore;
 
 **Line 1**
@@ -97,25 +119,30 @@ Kana uchida kuti `nyora()` anyore zvakawanda, unoisa ma `comma,` pakati pezvinhu
 ```
 nyora(2021,2022)
 ```
-Apa, `nyora()` apihwa zvinhu 2; `nhamba` 2021 na `nhamba` 2022. Ma `nhamba` pakati pema `nhamba` aya pane ma comma, zvichireva kuti ukuudza `computer` kuti `2021` na `2022` ma `nhamba` akasiyana. 
+Apa, `nyora()` apihwa zvinhu 2; `nhamba` 2021 na `nhamba` 2022. Pakati pema `nhamba` aya pane ma `comma`, zvichireva kuti ukuudza `computer` kuti `2021` na `2022` ma `nhamba` akasiyana. 
 
 Ukasaisa `comma`, Ukanyora kuti
 
-:::danger Hazvibvumidzwe
 ```
 nyora(2021 2022)
 ```
-:::
-`Computer` ichatadza kunzwisisa kuti `2021 2022` chii, nekuti haisi `nhamba`, `mashoko`, kana `variable`. Saka icahkuudza kuti `paita problem`
+
+`Computer` ichatadza kunzwisisa kuti `2021 2022` chii, nekuti haisi `nhamba`, `mashoko`, kana `variable`. Saka ichakuudza kuti `paita problem`
 
 **Line 2 na Line 3**
 
-Apa tatanga nekugadzira `variable` inonzi `zitaRangu`. Saka paline 5, ukupa `nyora()` zvinhu 2; mashoko ekuti `"Inini ndinonzi "`, ne `variable` inonzi `zitaRangu`. 
-Ukaita ma steps 3 aye ekumashure emu `terminal`, unoona kuti `Inini ndinonzi Panashe` mu terminal. 
+Apa tatanga nekugadzira `variable` inonzi `zitaRangu`. Saka pa`line 5`, ukupa `nyora()` zvinhu 2:
+1. mashoko ekuti `"Inini ndinonzi "`
+2. `variable` inonzi `zitaRangu`. 
+Ukaita ma **steps 3** aye ekumashure emu `terminal`, unoona mu `terminal` makanzi:
+```
+Inini ndinonzi Panashe
+```
 
-:::info Ndovimba zvanzwisisika
-Tumira message kuwhatsapp kana ku facebook kana uchida kubatsirwa. 
 :::
+
+**Tumira message kuwhatsapp kana ku facebook kana uchida kubatsirwa.**
+
 
 export const Image = ({source}) => (
     <div style={{backgroundColor:"", textAlign: "center"}}>
@@ -127,7 +154,7 @@ export const Image = ({source}) => (
 );
 
 export const Question = ({text}) =>    (
-        <div style={{display: "flex", width: "80%", minHeight: "100px", backgroundColor: "#FFEDC4", borderRadius: "10px", padding: "5px", margin: "auto", border: "solid", borderWidth: "1px", borderColor: "rgba(0,0,0,0.1)", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px", marginBottom: "10px"}}>
+        <div style={{display: "flex",alignItems:"center", width: "80%", minHeight: "100px", backgroundColor: "#FFEDC4", borderRadius: "10px", padding: "5px", margin: "auto", border: "solid", borderWidth: "1px", borderColor: "rgba(0,0,0,0.1)", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px", marginBottom: "10px"}}>
          <div style={{flex: 2, fontSize: "14px"}}>{text}</div> 
         <div style={{flex: 1, display:'flex', alignItems: "center"}}>
             <img src="/img/question (1).png" height="100px">
@@ -135,3 +162,4 @@ export const Question = ({text}) =>    (
         </div>
         </div>
     )
+

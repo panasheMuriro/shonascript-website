@@ -171,11 +171,21 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 }
 
 .lh2 {
-  background-color: red !important;
-  position: absolute;
-  z-index: 3;
-  height: 1000vh !important;
-  background-image: url('/img/rotate.svg');
+
+  /* position: absolute; */
+  /* z-index: 3; */
+  height: 100% !important;
+  background-image: url('/img/shona_outline.png');
   width: 100%;
-  margin: 0
+  margin: 0;
+  align-items: "center"
+}
+
+
+.tablet_h {
+  display: "flex" !important;
+  justify-content: "space-evenly" !important;
+  width: 100% !important;
+  height: "70vh" !important;
+  background-color: "#008080" !important;
 }

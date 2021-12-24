@@ -3,21 +3,186 @@ sidebar_position: 8
 ---
 
 # Maths
-
-
-:::danger Waiting For December 24
-More information coming after 24 December 2021. Please visit again then
+:::caution Not yet Revised
 :::
 
-<Image source="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/merry-christmas-logo-design-template-bbb470a4ca116bc6f6a9aa2b2cfab9b4_screen.jpg?ts=1601407043"/>
+### Maths ne ShonaScript
+
+Unogona kuita `maths` ne`ShonaScript` dzemhando yakasiyana siyana. Ngatimbotora _addition_ (kusanganisa) semuenzaniso:
 
 
+<Image source="/img/maths1.jpeg" />
+
+
+**Chii chikuitika apa?🤯**
+
+:::info Tsananguro
+
+Apa, tikuda kusanganisa `nhamba` 45 na `nhamba` 5. Computer kana yasanganisa ma `nhamba` aya, ichawana mhinduro yacho, asi iwewe kuti ugone kuona mhinduro yawanikwa ne `computer` iyoyo, uchashandisa `nyora()`.
+Saka tagdzira `variable` inonzi `x` tobva tati ndiyo ichachengeta mhinduro ichawanikwa ne `computer` pakusanganisa 45 na 5. 
+:::
+
+:::success Ita
+Nyora `code` iyoyi mu `index.shona`, wochiita izvi:
+
+1. mu `terminal`, nyora kuti: 
+`node shona.js` wobaya `enter`
+
+2. mu `terminal`, nyora kuti: 
+`node index.js` wobaya `enter`
+:::
+
+ukaita izvi zvakanaka, unofana kuona mu `terminal` makanzi 50
+
+
+:::success Ita
+
+Chibvisa `+` aripakati pa 45 na 5, oisa `-` , oita masteps emuterminal aripamusoro apo uone zvinoitika.
+
+Dzokorora izvi uchashanisa `*` na `/`
+
+Zvinoreva masymbols eMaths aya:
+
+`+` - addition (kusanganisa)
+
+`-` - subtraction (kubvisa)
+
+`*` - multiplication 
+
+`/` - division
+:::
+
+
+### `Nhamba.chero()`
+
+`ShonaScript` ine _function_ inoita `basa` rekupa chero `nhamba` iri pakati pa 0 na 9.
+
+
+<Image source="/img/maths2.jpeg"/>
+
+
+:::success Ita
+Nyora `code` iyoyi mu `index.shona`, wochiita izvi:
+
+1. mu `terminal`, nyora kuti: 
+`node shona.js` wobaya `enter`
+
+2. mu `terminal`, nyora kuti: 
+`node index.js` wobaya `enter`
+
+Usachinje chinhu mu `index.shona`, asi dzokorora izvi uchitarisa mu `terminal` zvikuitika:
+1. mu `terminal`, nyora kuti: 
+`node shona.js` wobaya `enter`
+
+2. mu `terminal`, nyora kuti: 
+`node index.js` wobaya `enter`
+:::
+
+Ukaramba uchingodzokorora izvi, unoona kuti mu `terminal` muri kunyorwa ma `nhamba` akasiyana siyana asi ma `nhamba` aripakati pa 0 na 9.
+
+<Question  text="Ko kana uchida kuti computer ikupe nhamba iri pakati pa 0 na 5" />
+
+Unoita izvi:
+```
+x = nhamba.chero(6)
+nyora(x)
+```
+Chachinja apa ndechekuti muma _brackets_ a `nhamba.chero()` maiswa `nhamba` 6. Ukaisa `nhamba` muma _brackets_ a `nhamba.chero()` unenge uchiudza `computer` kuti ikupe chero `nhamba` iri pasi pe `nhamba` yaiswa muma _brackets_.
+Sezvo taisa 6 muma _brackets_ apa, zvaakureva kuti `computer` inokupa chero nhamba iri pakati pa 0 na 5 kwete 0 na 6.
+Ukaisa `nhamba` muma _brackets_ sezvataita pekutanga, `computer` inokupa chero `nhamba` iri pakati pa 0 na 9
+
+:::danger Nhamba iri muma _brackets_ a `nhamba.chero()`
+
+Ukaisa 3 muma _brackets_, `computer` inokupa chero nhamba iri pakati pa 0 na 2
+
+Ukaisa 6 muma _brackets_, `computer` inokupa chero nhamba iri pakati pa 0 na 5
+
+Ukaisa 9 muma _brackets_, `computer` inokupa chero nhamba iri pakati pa 0 na 8
+:::
+
+### Gadzira Gemhu (Game)
+Taakuda kumbogadzira game inonzi **rock, paper, scissors**. Apa tichaiti **dombo, pepa, chigero**
+
+
+:::info **Mutemo we gemhu**
+
+1. Pane zvinhu 3 zvaunokwanisa kusarudza:
+- dombo
+- pepa
+- chigero
+2. Iwewe uchasarudza pakati pe: dombo, pepa, chigero.
+3. Computer ichasarudza pakati pezvinhu 3 izvozvo asi `computer` ichashandisa `nhamba.chero()` kuita izvi
+4. Pakasarudzwa:
+- **dombo ne pepa**, asarudza **dombo** adyiwa nekuti **pepa** rinovhara **dombo**
+- **dombo ne chigero**, asarudza **chigero** adyiwa nekuti **dombo** rinotswanya **chigero**
+- **pepa ne chigero**, asarudza **pepa** adyiwa nekuti **chigero** chinocheka **pepa**
+:::
+
+<Question text="Gemhu iyi tichaigadzira sei?" />
+
+:::note **Ngatironge magaziriro atichaita gemhu**
+
+1. Tichagadzira `variable` yesarudzo yedu, yatichati `sarudzoYangu` ndobva ndati ndi "dombo"
+```
+sarudzoYangu = "dombo"
+```
+2. Tichagadzira sarudzo ye `computer`, `computer` ichasarudza pakati pa "dombo", "pepa", ne "chigero" ichishandisa `nhamba.chero()`. 
+- Uchatanga wagadzira `list` re `sarudzo dzese` riine "dombo", "pepa", ne "chigero" seizvi:
+
+```
+sarudzoDzese = ["dombo", "pepa", "chigero"]
+```
+- Taakuda kuti `computer` itore chero chinhu chiri mu `sarudzoDzese` tichishandisa `nhamba.chero()`. Ukaisa `nhamba` muma _brackets_ a `nhamba.chero()`. 
+- Kana uchida kutora chinhu chiri pekutanga mu `sarudzoDzese`, unoshandisa `sarudzoDzese[0]`, izvi zvinoreva kuti pinda mu `list` rinonzi `sarudzoDzese` utore chinhu chiri pana 0. chinhu chekutanga mu `list` chinonzi chiri pana 0. Izvi zvinoreva kuti chinhu chechipirr mu `list` chiri pana 1
+- Saka zvatiri kutaura apa ndezvekuti:
+    - `"dombo"` ari pana `sarudzoDzese[0]`
+    - `"pepa"` ari pana `sarudzoDzese[1]`
+    - `"chigero"` ari pana `sarudzoDzese[2]`
+- Isusu tikuda kuti `computer` isarudze chero pakati pe `nhamba` 0 na 2
+    - Kuti tiwane `nhamba` iri pakati pa 0 na 2 tichishandisa `nhamba.chero()` tinoti `nhamba.chero(3)` togadzira `variable` yenhamba yasarudzwa ne `computer` iyoyo seizvi:
+    ```
+    nhambaYaSarudzwa = nhamba.chero(3)
+    ```
+    Apa panogona kubuda 0,1,kana kuti 2. Hatizive zvichabuda ipapo kusvikira taita kuti `code` yedu ishande
+- `Computer` yaakukwanisa kushandisa `variable` ye `nhambaYaSarudzwa` iya pakusarudza chero pakati pa "dombo", "pepa", ne "Chigero" ichiti `sarudzoDzese[nhambaYaSarudzwa]` seizvi:
+```
+sarudzoYeComputer = sarudzoDzese[nhambaYaSarudzwa]
+```
+
+- Tichazoshandisa `kana`, ne `enzaniso` kutarisa kuti adyiwa pa gemhu ndiani. Tarisa pazasi uone code yacho yese:
+:::
+
+
+<Image source="/img/maths3.jpeg" />
+
+
+:::success Ita
+Nyora `code` iyoyi mu `index.shona`, wochiita izvi:
+
+1. mu `terminal`, nyora kuti: 
+`node shona.js` wobaya `enter`
+
+2. mu `terminal`, nyora kuti: 
+`node index.js` wobaya `enter`
+:::
+
+
+Kana uchinge usiri kunzwisisa kuti `code` iyi ikushanda sei, unokurudzirwa kubvunza mu _whatsapp group_ kuti ubatsirike
 
 export const Image = ({source}) => (
     <div style={{backgroundColor:"", textAlign: "center"}}>
         <div style={{ width:"90%" }}>
                 <img src={source} style={{borderRadius: "10px", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px"}} width="95%"></img> 
         </div>
-    </div>
- 
+    </div> 
 );
+
+export const Question = ({text}) =>    (
+        <div style={{display: "flex",alignItems:"center",  width: "80%", minHeight: "100px", backgroundColor: "#FFEDC4", borderRadius: "10px", padding: "5px", margin: "auto", border: "solid", borderWidth: "1px", borderColor: "rgba(0,0,0,0.1)", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px", marginBottom: "10px"}}>
+         <div style={{flex: 2, fontSize: "14px"}}>{text}</div> 
+        <div style={{flex: 1, display:'flex', alignItems: "center"}}>
+            <img src="/img/question (1).png" height="100px">
+            </img>
+        </div>
+        </div>
+    )

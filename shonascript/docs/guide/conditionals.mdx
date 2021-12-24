@@ -4,9 +4,159 @@ sidebar_position: 4
 
 # Kana, Zvimwe
 
-:::danger Waiting For December 24
-More information coming after 24 December 2021. Please visit again then
+:::caution Not revised yet
 :::
+
+## Kana/Zvimwe chii?
+
+Pane dzimwe nguva dzekuti iwewe unogona kuda kuudza `computer` kuti itarise uye ishandise chidimbu che `code` mushure mekunge `kana` chimwe chinhu chiri chokwadi, ndopanoshanda `kana`. Kana chinhu ichocho chisiri `chokwadi`, unenge uchiudza kuudza `computer` kuti ishandise `imwe` `code` isiri muma _brackets_ a `kana`. `Code` iyoyo inozoshandiswa inoiswa muma _brackets_ a `zvimwe`
+
+Kuti ugonzwisisa zvatiri kutaura pano, tichashandisa zvinhu izvi: 
+
+:::info zvatichashandisa na Kana/Zvimwe
+1. ma `variable`
+2. `enzaniso`
+3. `nyora()`
+:::
+
+Kana usina kunzwisisa kuti ma `variables` ne `enzaniso` chii, unokurudzirwa kuverenga ma _topic_ iwayo zvekare, uyezve unogona kubvunza mu group re _whatsapp_ kuti ubatsirike
+
+## Mashandisirwo a Kana na Zvimwe
+
+### Unoshanda kuzvitupa
+:::success Wapihwa basa kuzvitupa (National IDs)
+:::
+
+Ngatimboti iwewe unoshanda kuzvitupa mu Zimbabwe. Mu Zimbabwe, munhu anobvumidzwa kutora chitupa kana achinge asvitsa makore 16. Ngatomboti iwewe basa rako nderekubvunza makore emunhu auya kuzotora chitupa. `Kana` munhu akati ane makore 16 zvichienda mberi, uchamuudza kuti aende ku office kunotora chitupa, `zvimwe` uchamuudza kuti anozodzoka kana aane makore 16.
+
+
+Iwewe semunhu aakugona kushandisa `ShonaScript`, ukuda kuita kuti munhu auya kuzotora chitupa audzwe zvekuita ne `computer`. Saka uchanyora `code` inoita izvi uchiteedzera masteps ari pazasi apa.
+
+:::note Ronga
+#### Step 1 : Kugadzira ma `variables`
+Tiri kuda kuzoenzanisa zvinhu 2 izvi: 
+1. makore anobvumidzwa kuti munhu atore chitupa mu Zimbabwe
+2. makore emunhu auya kuzotora chitupa
+
+Saka zvawaona kuti tichada kuzoshandisa `enzaniso`, zvaakureva kuti tikufana kugadzira ma `variables` 2 aya: 
+
+1. `makoreAnobvumidzwa`
+- Ndiyo `variable` yemakore anobvumidzwa kuti munhu atore chitupa (16 years) 
+2. `makoreEMunhu`
+- Ndiyo `variable` yemakore e munhu auya kuzotora chitupa. Pakutanga apa ngatimboti makore emunhu auya kuzotora chitupa nhasi ane makore 15
+:::
+
+Zvatapedza kuronga pa _step 1_, chinyora `code` yacho seizvi:
+
+:::success Ita
+1. Pa `line 1` mu `index.shona`, nyora kuti
+```
+makoreAnobvumidzwa = 16
+```
+2. Pa `line 2` mu `index.shona`, nyora kuti
+```
+makoreEMunhu = 15
+```
+:::
+
+se izvi: 
+
+<Image source="/img/kana1.jpeg" />
+
+
+Ma `nhamba` ariku left ayo ndiwo ma nhamba ema_line_ aunoona mu `VS Code`
+
+:::danger Usanyore se izvi
+Usagadzire variable yako uchiti:
+`makoreAnobvumidzwa = 16 years`
+
+Izvi hazviite nekuti ukadzokora kunoverenga nezve ma `variables`, uchaona kuti `computer` ichatarisa ku _right side_ kwe _equal sign_ (=) yobva yaona kuina `16 years`. Zvichaitika ndeizvi: 
+1. `16 years` haasi muma quotes, saka haasi `mashoko`.
+2. `16 years` haisi `nhamba` nekuti pane `16` na `years`
+3. `16 years` achaonekwa kunge `variable`, computer ichakuudza kuti manyorero awaita `variable` iyoyo haasiriwo
+:::
+
+Iwewe wanga ukuda kuenzanisa makore, saka makore i `nhamba`, zvichireva kuti paunogadzira ma `variable` ako, unofana kuisa nhamba ku _right side_ kwe _equal sign_. 
+
+
+#### Step 2: Kushandisa `enzaniso` na `kana` na `zvimwe`
+
+:::success Ita
+
+1. Pa `line 4` mu `index.shona`, nyora kuti:
+```
+kana makoreEMunhu iridiki pane makoreAnobvumidzwa {
+```
+2. pa `line 5` mu `index.shona`, nyora kuti: 
+```
+nyora("Uchiri mudiki, unozodzoka waane makore 16")
+```
+3. pa `line 6` mu `index.shona`, nyora kuti: 
+```
+} zvimwe {
+```
+4. pa `line 7` mu `index.shona`, nyora kuti: 
+```
+nyora("Enda ku Office kunotora chitupa")
+
+```
+5. pa `line 8` mu `index.shona`, nyora kuti:
+```
+}
+```
+:::
+
+se izvi:
+
+<Image source="/img/kana2.jpeg"/>
+
+
+<Question text="Hausi watyora shona here apa?"/>
+
+:::info **Tsananguro**
+
+Kana enzaniso iyo iri `chokwadi`, tikuda kuti computer ishandise `code` iri muma _curly brackets_ `{}` ekutanga. Asi `kana` `enzaniso` isiri `chokwadi` tikuda kuti `computer` ishandise `code` iri muma _curly bracket_ echipiri anoteera `zvimwe`.
+
+**Tatyora Shona here?**
+
+`Computer` inonzwisisa kuti `makoreEmunhu` na `makoreAnobvumidzwa` ma `variables`. Saka `computer` ichaverenga ichiti 
+**kana `variable` inonzi `makoreEMunhu iridiki pane` `variable` inonzi `makoreAnobvumidzwa`**
+
+
+:::
+
+Kana wapedza kunyora code yako, chiona kuti mu `terminal` munonyorwa kuti chii.
+Zvekare kuti unoita izvi kana uchida kuti `code` yako isande
+
+:::success Ita
+1. mu `index.shona`, nyora `code` iri mu _picture_
+2. mu `terminal` nyora kuti `node shona.js`, wobaya `enter`
+3. mu `terminal` zvekare, nyora kuti `node index.js`, wobaya `enter`
+:::
+
+
+Ukaita izvi zvakanaka, unofana kuona mu `terminal` makanyorwa kuti:
+```
+Uchiri mudiki unozodzoka waane makore 16
+```
+Zvechokwadiwo `makoreEMunhu` anga ari 15 zvichireva kuti haasi aakukwanisa kutora chitupa. 
+
+
+:::success Ita 
+Chiisa makore akawanda kudarika 16
+1. mu `index.shona`, uchinje makoreEMunhu kuti aite 18 se izvi: 
+```
+makoreEMunhu = 18
+```
+2. mu `terminal` nyora kuti `node shona.js`, wobaya `enter`
+3. mu `terminal` zvekare, nyora kuti `node index.js`, wobaya `enter`
+:::
+
+Ikozvino unofana kuona mu `terminal` makanzi: 
+
+```
+Enda ku Office kunotora chitupa
+```
 
 
 export const Image = ({source}) => (
@@ -17,3 +167,15 @@ export const Image = ({source}) => (
     </div>
  
 );
+
+export const Question = ({text}) =>    (
+        <div style={{display: "flex",alignItems:"center",  width: "80%", minHeight: "100px", backgroundColor: "#FFEDC4", borderRadius: "10px", padding: "5px", margin: "auto", border: "solid", borderWidth: "1px", borderColor: "rgba(0,0,0,0.1)", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px", marginBottom: "10px"}}>
+         <div style={{flex: 2, fontSize: "14px"}}>{text}</div> 
+        <div style={{flex: 1, display:'flex', alignItems: "center"}}>
+            <img src="/img/question (1).png" height="100px">
+            </img>
+        </div>
+        </div>
+    )
+
+ 
