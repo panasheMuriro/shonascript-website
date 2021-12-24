@@ -32,9 +32,7 @@ function HomepageHeader() {
               />
             </h1>
             <p className="">
-              If you know Shona, then you can learn coding using Shonascript
-              Programming Language. Launch date for ShonaScript is 24 December
-              2021
+              Learn how to write code in Shona using ShonaScript Programming Language
             </p>
             <div className={styles.buttons}>
               <Link
