@@ -1,0 +1,38 @@
+---
+sidebar_position: 6
+---
+
+# Teerera mhinduro
+
+Paunonyora message pa whatsapp, pane chinhu chinotarisa zvaukunyora. 
+Paunozopedza kunyora wobaya `bhatani` re kutumira message yako, chinhu ichi chinozotora zvese zvawanyora chotumira semessage kune munhu wauri kutarura naye.
+
+
+Kuti tiburitse pekunyorera pacho pa website yedu, tinoshandisa `tm`. Tinenge tichiedza kuti `teerera mhinduro` ichanyorwa ne munhu pa website.
+Unokwanisa kuchinja mamiriro a `tm` sekungochinja kwaunoita `box`
+
+:::success Zvekuita
+Tikuda kuisa `tm` pa website yedu kuti tinyore zvatinoda
+:::
+
+<DuoImage source1="/img/tm1.jpg" source2="/img/tm1.1.jpg"/>
+
+:::info chii chikutika apa
+- Taumba `tm` kuti tigoteerera zvichanyorwa nemunhu
+- Tabaya mu `tm` macho matagadzira pa website, tobva tatanga kunyora zvatinoda imomo
+:::
+
+
+export const DuoImage = (props) => (
+    <div style={{backgroundColor:"", textAlign: "center", display: "flex", JustifyContent: "evenly"}}>
+        <div style={{ width:"90%" }}>
+                <img src={props.source1} style={{borderRadius: "0px", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px"}} width="95%"></img> 
+        </div>
+         <div style={{ width:"90%" }}>
+                <img src={props.source2} style={{borderRadius: "0px", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px"}} width="95%"></img> 
+        </div>
+    </div>
+);
+
+
+

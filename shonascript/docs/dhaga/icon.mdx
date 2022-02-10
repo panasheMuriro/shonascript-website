@@ -1,0 +1,69 @@
+---
+sidebar_position: 5
+---
+import Icons from "../../src/components/Icons";
+
+
+# Icon
+
+Ma `icon` anoshandiswa muma `bhatani` kuti `mabhatani` aya aonekerewo zvakanaka kana kuti panzvimbo yekunyira mukati me `bhatani`, wobva wangoisa `icon` kuti `bhatani` rako riite ridiki
+Ukatarisa mu `application` ye `ShonaScript`, pane `bhatani` raunobaya kana wapedza kunyora `code`, rine `icon` re `play` kureva kuti `Dhaga` kana `ShonaScript` ngaichitanga kushandisa `code` yako.
+Taigona kubvisa `icon` iyi, tobva tanyora mukati me`bhatani` iri kuti `chitanga` seizvi:
+
+<Image source="/img/ic1.jpg"/>
+
+Ndabvisa `icon` pa `bhatani` repa application ye ShonaScript ndikabva ndaisa mashoko kuti ungoone zvinoitika. 
+Bhatani rinobva ratora nzvimbo yakawanda, saka kana uine mabhatani akawanda, anogona kutadza kukwana paunenge uchimaisa, saka ndopanozodawo ma `icon`.
+
+Kana uchiumba `icon`, unoshandisa `ic-`. Maumbirwo e `icon` akasiyana ne `box` kana `bhatani`. `Icon` inopihwa zvinhu 3: `nhamba`, `color`, ne `size`. Unonyora seizvi:
+
+```
+ic-2-red-2
+```
+Apa unenge uchitora `icon` iripa`nhamba` 2 kubva pa 286 ma `icons` ari pazasi apa, woipa color ye `red`, woipa size ye 2.
+
+:::success Zvekuita
+- Tarisa nhamba ye `icon` yakafanana neiri mu application yeshonascript pazasi apa
+- Umba `bhatani` ine color ye `#008080`, oisa `icon` iyoyo oipa `color` yewhite.
+- Chibvisa makona `bhatani` rifanane neriri mu application ye ShonaScript
+:::
+
+<DuoImage source1="/img/ic2.jpg" source2="/img/ic2.1.jpg"/>
+
+:::info chii chikuitika apa
+- Tagadzira `bhatani` re rakakura `kr-2`, rakafara `kf-2`, tobva tabvisa `makona` nesize yekupedzisira kuti `bhatani` iri riite `circle`.
+- Tazogadzira rimwe `bhatani` pazasi rakafanana neraunoshandisa kudzokera kunonyora `code`. 
+:::
+
+Unogona kuisa `icon` pamwe chete nemashoko mu`bhatani`
+
+<DuoImage source1="/img/ic3.jpg" source2="/img/ic3.1.jpg"/>
+
+Sezvambotsanangurwa kumashure, mabhatani ako haana zvaanoshanda panguva ino nekuti hauna kunyora `code` yeShonaScript inoita kuti ashande.
+Izvi uchazozviona kumberi kune `topic` yacho ye `ShonaScript` ne `Dhaga`.
+
+
+## icons - 286
+<Icons />
+
+export const Image = ({source}) => (
+    <div style={{backgroundColor:"", textAlign: "center"}}>
+        <div style={{ width:"90%" }}>
+                <img src={source} style={{borderRadius: "10px", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px"}} width="95%"></img> 
+        </div>
+    </div>
+ 
+);
+
+
+
+export const DuoImage = (props) => (
+    <div style={{backgroundColor:"", textAlign: "center", display: "flex", JustifyContent: "evenly"}}>
+        <div style={{ width:"90%" }}>
+                <img src={props.source1} style={{borderRadius: "0px", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px"}} width="95%"></img> 
+        </div>
+         <div style={{ width:"90%" }}>
+                <img src={props.source2} style={{borderRadius: "0px", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px"}} width="95%"></img> 
+        </div>
+    </div>
+);

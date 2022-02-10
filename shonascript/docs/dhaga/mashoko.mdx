@@ -1,0 +1,79 @@
+---
+sidebar_position: 2
+---
+
+# Mashoko
+
+Zvinhu zvese zvinobuda zvakanyorwa pa website yako, ndizvo zvinenge zvatariswa semashoko ne `dhaga`. 
+Unogona kutongoisa `mashoko` pawebsite yako uchitongonyora zvaukuda kunyora zvacho zvisiri mu`box` sezvatakaita pama flag eNigeria ne France kumashure
+
+
+Kazhinji kana pachinyorwa nyaya, panowanzoiswa mashoko mahombe anenge ari emusoro we nyaya (_heading_), nyaya yacho yozonyorwa nemashoko madiki. 
+
+Kana uchida kuisa musoro we nyaya pa website yako, unoshandisa `mn`. `Size` yemusoro wenyaya inobva pana 1 kusvika pana 6. Ma `size` aya anobva ku 1 achienda ku 6 achiita madiki, saka `mn1` muhombe kudarika `mn6`. 
+
+<DuoImage source1="/img/mn1.jpg" source2="/img/mn1.1.jpg"/>
+
+:::info chii chikuitika apa
+- Taisa misoro yenyaya `mn` yakasiyana ma size akasiyana kubva ku 1 kusvika ku 6
+    - `mn1` muhombe kupfuura `mn6` sezviri kuoneka
+:::
+
+Unogona kuchinja `color` yemashoko ari mu `mn` uchishandisa `ms-c-` zvichireva kuti `color yemashoko`. 
+
+:::success Zvekuita
+- Nyora zita rako mu `mn1`
+- Chinja `color` kuita chero imwe `color` kunze kwe black
+- Ita kuti Zita rako riende pakati
+:::
+
+<DuoImage source1="/img/mn2.jpg" source2="/img/mn2.1.jpg"/>
+
+:::info chii chikuitika apa
+- Ndaisa `mn1` ane `color` ye `#008080` na `ms-c-#008080`, ndobva ndaronga mashoko kuti aenda pakati na `rg-c`
+    - ma `color` aya ari kumashure kwekupedzisira kwe book, sarudzawo yaunofarira ikoko
+
+- Pandaisa `mn` chete pa website, abva aenda pamusoro soro pa `screen` asi inini ndanga ndichida kuti ati dzikei zvishoma, saka ndazoisa `box` risina chinhu pamusoro kuti `mn` adzike pasi
+:::
+
+Takamboona kumashure kuti kana uchida kungonyora mashoko anobuda pa website, unotongonyora mu `code` yako zvakangodaro. Ukangonyora mashoko ari pachena, asiri mubox, hauzokwanise kuchinja zvinhu zvakaita se `color`, `size`, kana `ukobvu` hwe mashoko aya.
+Saka kuti ugone kuzochinja mamiriro e mashoko ako, unofana kumaisa mu `box`. Kana waisa mashoko mu`box`, unokwanisa kuchinja izvi:
+
+|Nickname |Zvazvinoreva | Muenzaniso|
+|---|---|---|
+|ms-c |color ye mashoko | `ms-c-red` anochinja mashoko kuita `red`|
+|ms-sz| size ye mashoko | `ms-sz-2` anochinja size yemashoko kuita 2. Masize aya anobva ku 1 kusvika ku 10|
+|ms -uk | ukobvu hwemashoko | `ms-uk-3` anochinja ukobvu hwemashoko kuita size 3. Masize aya anobva ku 1 kusvika ku 4|
+
+<DuoImage source1="/img/mn3.jpg" source2="/img/mn3.1.jpg"/>
+
+:::info chii chikuitika apa
+- Taumba ma `box` 4 ane ma `color` atatora kubva kwekupedzisira kwe bhuku
+- Tachinja ukobvu hwemashoko aya tichishandisa `ms-uk` 
+:::
+
+:::success Zvekuita 1
+- chinja `size` yemashoko ari mu `box` uchishandisa `ms-sz-` sokuti `ms-sz-3` uone zvinoitika. 
+- Chinja ma `size` aya kusvika ku 10 kana uchida kuona ese 
+:::
+
+Taakuda kushandisa `picture`, `musoro we nyaya`, 
+:::
+
+
+
+
+
+
+
+
+export const DuoImage = (props) => (
+    <div style={{backgroundColor:"", textAlign: "center", display: "flex", JustifyContent: "evenly"}}>
+        <div style={{ width:"90%" }}>
+                <img src={props.source1} style={{borderRadius: "0px", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px"}} width="95%"></img> 
+        </div>
+         <div style={{ width:"90%" }}>
+                <img src={props.source2} style={{borderRadius: "0px", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px"}} width="95%"></img> 
+        </div>
+    </div>
+);

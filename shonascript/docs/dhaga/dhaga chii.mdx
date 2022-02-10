@@ -1,0 +1,281 @@
+---
+sidebar_position: 1
+---
+
+# Box
+Ma shapes, ma pictures, nezvimwe zvakawanda zvaunoona pama website zvinenge zviri muma `box`. Tichashandisa website ye Econet kuti tione kuti ma `box` arikutaurwa akaita sei.
+Picture iri ku left iri kuratidza website ye econet semaonero aunoita iwewe kana ukaendapo. Picture iri kuright iri kuratidza ma box akashandiswa kugadzira website iyi. Uchazoziva zvakawanda zvine chekuita nema `box` aya kana ukaramba uchiverenga.
+<DuoImage source1="/img/econet.jpg" source2="/img/econet-css.jpg"/> 
+
+_disclaimer: ShonaScript doesn't own this image; credits: Econet Homepage_
+
+
+## Color ye Box
+Zvataona kuti website inogadzirwa nema `box`, taakuda kuumbawo website yedu ne `dhaga`, tobva taisa `box` rinooneka pa website iyoyo.
+
+```
+box:
+;
+```
+
+:::info **chii chikuitika apa?**
+
+Tagadzira box, tobva tavhura box racho na `:`, tobva tazorivhara na `;`. `Box` iri harina chinhu, apa tikuda kungoona kuti rakaita sei.
+Ukanyora code iyi mu `application` wobva wabaya bhatani re `play`,
+panobuda peji rewhite risina chinhu. Izvi zvinoitika nekuti `box` 
+rawaisa pa peji ye website yako harina `color`. 
+Tikuda kuchinja `color` ye `box` kuita `green` kuti rioneke `box` racho. 
+Kuchinja color yebox, unoshandisa `c-` seizvi:
+
+```
+box c-green:
+;
+```
+:::
+
+<DuoImage source1="/img/box1.jpg" source2="/img/box1.1.jpg"/>
+
+:::info **chii chikuitika apa**
+
+- Taumba `box`, tobva taudza `dhaga` kuti `color` ye `box` iri ngaiite `green`. 
+- Ma `color` mamwe aunogona kushandisa anoonekwa pa peji rekupedzisira.
+- Ukatarisa ka `box` kedu aka, unoona kuti kakareba uye kakafara zvakangofanana, nemamwe mashoko, tiri kuti ka `square`.
+:::
+<Question text="Ko sei ka box aka kari ka diki, ko kana ndichida kuumba box rihombe ndinota sei"/>
+
+## Size ye Box
+Pese paunoumba `box`, rinotanga rakareba `size 1` uye rakafara `size 1`. 
+Ukatarisa pamusoro apa pataisa `color` ye `box`, tashandisa `c-`. 
+Tikushandisa ma `abbreviation` kana kuti ma `nicknames` ezvinhu zve `box` kuti zvitiitire nyore pakunyora `code` yedu. 
+Munhu anonzi `Takudzwa` anogona kupihwa nickname yekuti `tk`, kuti zviite nyore pakudaidza zita iri.
+Tichashandisa ma `nickname` akawanda pakuumba ma `website`.
+
+Kana uchida kuchinja kureba kwakaita box, unoshandisa `nickname` ya kureba `kr-`. `Box` rinotanga rakareba `kr-1`, zvichireva kuti rakareba `size 1` sezvambotaurwa kumashure. 
+Kuchinja kufara kwakaita `box`, unoshandisa `kf-`, saka `box` rinotanga rakafara `kf-1`.
+`Size` yekufara `kf-` inobva pana `0` kuzvika pana `10`.`Size` yekureba `kr-` haina magumo, asi unofana kuziva kuti haumboshandise ma nhamba akakurisa zvekusvika kuna ana `kf-100`. Unobvumidzwa kushandisa ma nhamba akaita se `1.5`. `1,5` haabvumidzwe.
+Nemamwe mashoko, tiri kuti `one point five` anobvumidzwa, asi `one comma five` haabvumidzwe. 
+
+:::success Zvekuita
+1. chinja `kureba` kuita `4`
+2. chinja `kufara` kuita `3`
+3. chinja `color` kuita `purple`
+:::
+
+<DuoImage source1="/img/box2.jpg" source2="/img/box2.1.jpg"/>
+
+## Ma Box akawanda
+
+Taona kuti unoumba `box` rimwe chete sei pamusoro apa, taakudza kuumba ma `box` 2 tobva taona kuti anobuda sei.
+
+<DuoImage source1="/img/box3.jpg" source2="/img/box3.1.jpg"/>
+
+:::info **chii chikuitika apa**
+- `box` ratagadzira pamusoro apa re `purple` richiripo
+- pazasi tazogadzira rimwe `box` rered 
+- ukagadzira rimwe `box` pazasi, rinongoendawo pazasi perimwe `box`
+:::
+
+Ikozvino tave kuziva kuumba ma `box`, tochinja `color`, `kureba`, ne `kufara` kwawo. Taakuda kugadzira flag yedu ye Zimbabwe
+:::success Flag ye Zimbabwe
+- gadzira flag ye Zimbabwe, asi chingogadzira ma line `green`, `yellow`, `red`, `black`, uchishandisa ma `box`.
+- Usaise triangle ne hungwe
+:::
+
+<DuoImage source1="/img/box4.jpg" source2="/img/box4.1.jpg"/>
+
+
+:::info Chii chikuitika apa
+- Tagadzira ma `box` 7 akafara `size 10`. Size 10 ndiyo yekupedzisira, ndosaka ma `box` aya akazara kubva ku `left` kwe screen kusvika ku`right` kwaro.
+- Handina kunyora kureba `kr-` nekuti ndikuda kuti kureba kwacho kuite `size 1`
+    - sezvambotaurwa kumashure uku, ukaisa `kr-`, kana `kf-`, box rako rinenge riine `kr-1` kana `kf-1`
+:::
+
+
+:::success Zimwe Zvekuita
+- gadzira ma flag ari pazasi apa uchishandisa `dhaga`
+:::
+
+## Zvinhu mu Box
+
+Pese patagdzira ma `box` kumashure tanga tisingaise chinhu mukati imomo. 
+Taakuda kugadzira box, tobva taisa rimwe box mukati me box iroro.
+
+:::success Zvekuita
+- gadzira `box`, oisa color yaunoda, `kf-3`, `kr-3`
+- isa `box` mukati me box rawagadzira, oisa color yakasiyana, uye `kf-2`, `kf-2`
+- mu `box` remukati, isa `mashoko` ekuti `dhaga`
+:::
+
+:::info chii chikuitika apa
+- Taumba `box` hombe rine size `kf-3` ne `kr-3` ne `c-green`
+- Taisa `box` diki mukati me `box` rekutanga re `c-red`
+    - `Box` iri rinoenda pakati pekureba kwakaita mu`box` mariri, uye rinenge raka`rongwa` ku `left`. Uchazoziva kumberi kuti unorongasei zvakasiyana neizvi.
+- Taisa `mashoko` mukati me `box` diki. 
+    - ukangonyora mashoko asinei nekuumba `box`, anongoonekwawo se `mashoko` anongobudawo pa website asina zvaari kuumba.
+:::
+
+<DuoImage source1="/img/box5.jpg" source2="/img/box5.1.jpg"/>
+
+:::danger Size ye zvinhu mu`box`
+
+- Size ya zvinhu zviri mu`box` inofana kuita diki pane `size` ye `box` racho.
+- Kana uine `box` rakareba `kf-3`, obva waisa `box` mukati rakareba `kf-4`, `box` iri rinopfuurira, izvi zvinokanganisa kurongeka kwe `website` yako.
+   - Tarisa `picture` iri pazasi apa uone zviri kutsanangurwa apa 
+:::
+
+<DuoImage source1="/img/box6.jpg" source2="/img/box6.1.jpg"/>
+
+
+:::success Zvekuita
+
+- Umba `box` hombe
+- Chiisa ma `box` 2 mukati me `box` iri
+:::
+
+
+<DuoImage source1="/img/box7.jpg" source2="/img/box7.1.jpg"/>
+
+:::info chii chikuitika apa
+- Taumba `box` rihombe re `blue` rine `kf-3` ne `kr-3`
+- Mu `box` re `blue` taisa ma `box` 2.
+- Ma`box` aya handina kumapa `size` zvichireva kuti ane `kf-1` ne `kr-1` ese
+    - nekuti ma`box` ari mune rimwe `box` rihombe, anorongwa achibva ku `left` achienda ku`right` 
+:::
+
+
+### Kuronga Zviri mu Box
+Unoshandisa `rg-` kuronga zvinhu zviri mu`box`. Ukashandisa `rg-`, zvinhu zviri mu`box` zvinongrongwa zvakawandira ku `left`.
+
+| Nickname |Zvazvinoreva| Zvinoitika|
+| ---       | ---        |---       |
+|rg-c       | ronga center | zvese zvinoenda pakati |
+|rg-l       | ronga left | zvese zvinoenda kuleft |
+|rg-r       | ronga right | zvese zvinoenda kuright |
+|rg-sp       | ronga space | zvinhu zviri mubox zvinopanana space yakaenzana |
+
+<DuoImage source1="/img/box10.jpg" source2="/img/box10.1.jpg"/>
+
+:::info chii chikuitika apa
+- Taumba ma `box` 4 e `blue` ane mamwe ma `box` 2 e `red` ne `yellow`.
+- Taronga zviri mukati macho zvakasiyana siyana tichishandisa `rg-l`, `rg-c`, `rg-r`, na `rg-sp` 
+:::
+
+### Size ye zviri mu Box
+`Box` rihombe rakafara `size 3`, kochii chinoitika kana size yekufara kwakaita ma `box` emukati iri hombe kudarika mu `box` maari?
+
+<DuoImage source1="/img/box8.jpg" source2="/img/box8.1.jpg"/>
+
+:::info chii chikuitika apa
+- `box` rihombe rine `kf-3`
+- ma `box` arimukati ane `kf-2` ese, zvichireva kuti ukasanganisa kufara kwaakaita ese ari two, `kf` inobva yaita 4, asi 4 muhombe pana 3.
+- kana izvi zvaitika, `dhaga` inoedza kuronga zviri mukati me box, kuti chimwe chiende pa musoro, chimwe pazasi, zvingodaro
+    - marongerwo arikuedza kuitwa apa ndeekuti kufara kwema `box` aya kukwane mu `box` rihombe iro
+:::
+
+Zvataona kuti mabox ari mukati merimwe `box` anorongwa sei, taakudzokera kunogadzira mamwe ma flag. Tikuda kugadzira 2: ye Nigeria, neye France
+
+:::success Zvekuita
+Gadzira flag ye Nigeria, 
+:::
+
+<DuoImage source1="/img/box9.jpg" source2="/img/box9.1.jpg"/>
+
+:::info chii chikuitika apa
+- tanyora kuti Flag ye Nigeria pa `line 1`, aya mashoko saka anongobuda akadaro pa `website`
+- Taumba `box` re white rine `kf-9`, tobva taisa ma `box` 3 mukati ane `kf-3` rimwe ne rimwe. Tikasanganisa 3+3+3 tinowana 9, saka ma `box` aya ari 3, anobva angokwana achizadza `box` raari
+- kureba kwema `box` emukati tangoitawo kuti kufanane ne `box` raari
+:::
+
+## Kona ye Box
+
+Unokwanisa kubvisa makona e `box` kuti aite `round` uchishandisa `kn-`. `Size` yacho ya `kn-` inobva ku `0` kusvika ku `10`. Kana uine `box` re `square`, `kn-10` anoita kuti `box` re `square` riite `circle`
+
+<DuoImage source1="/img/box11.jpg" source2="/img/box11.1.jpg"/>
+- Taumba ma `box` ane `size` yakafanana nema `color` akasiyana
+- Tabvisa ma `kona` na `kn-` tichishandisa ma `size` akasiyana siyana
+    - `box` rekupedzisira rabva ratoita `circle` nekuti tabvisa ma `kona` ese ne `size` yekupedzisira `10`
+:::
+
+**Kubvisa ma kona ndizvo zvimwe zvandofarira kuita kana ndichigadzira ma `website`.**
+
+## Mumvuri we box
+Ma `website` akawanda enguva ino anenge aine ma `box` nema `bhatani` ane `mumvuri`(shadow) anoita kunge akasimudzwa. Izvi zvinoita kuti `website` yako ibude zvakanaka ichiitawo kunge yakagadzirwa manje manje pane kuti iite kunge yakagadzirwa internet ichangotanga.
+Unoshandisa `mv-` kuisa `mumvuri` pa`box`. `Size` yemumvuri we `box` inotanga pa `0` kusvika pa `10`.
+
+<DuoImage source1="/img/box12.jpg" source2="/img/box12.1.jpg"/>
+
+:::info chii chikuitika apa
+- taumba `box` rine `size 4`, re `white`
+- taisa mumvuri we `size 6` pa box iri
+    - zvinogona kusanyatsooneka zvakanaka pa `picture` iyi, asi ekatarisisa kumiganhu ye `box` iri unoona `color` inenge `gray`, ndiwo mumvuri wacho
+:::
+
+
+## Muganhu we box
+
+Unogona kuisa muganhu pa `box` wobva wachinja `color` yacho yemuganhu uchienda kuda kuti box rako ribudewo zvakanaka. Kuisa muganhu unoshandisa `mg-sz-`, zvichireva kuti `size yemuganhu`.
+`Size` yemuganhu inobva pa `0` kusvika pa `10`.
+Box rinotanga risina muganhu, zvireva kuti rinotanga riine `mg-sz-0`. Kana uchida kuchinja `color` yemuganhu, unoshandisa `mg-c-`, zvichireva kuti `color yemuganhu`
+
+<DuoImage source1="/img/box13.jpg" source2="/img/box13.1.jpg"/>
+
+
+:::info chii chikuitika apa
+- Taumba ma `box` 3 ane zvakasiyana siyana
+- Taisa miganhu pama `box` aya ine ma `size` akasiyana uye ma `color` akasiyana.
+:::
+
+## Tenderedza Box
+
+Unogona kutenderedza box kuti riite kakurereka zvichienderaka nezvaukuda kuona pa website yako. Unotenderedza `box` uchishandisa `tn-`.
+
+
+<DuoImage source1="/img/box14.jpg" source2="/img/box14.1.jpg"/>
+
+:::info chii chikuitika apa
+- Taumba `box`
+- Tatenderedza box iri ne `angle` ye `size` `1`
+     Zvekutenderedza ma box hazvisi zvinhu zvine basa rakanyanya, asi uchazoona kumberi kuti unogona kushandisa sei uchigadzira website yako
+:::
+
+## Viga Box
+
+Unongona ku`viga` `box` kana uchishandisa `v-`. `v-hongu` anoita kuti `box` risaoneke nezvese zvinenge zviri mukati. `v-kwete` anoita kuti box rioneke.
+Izvi zvichazoita basa kana tave kushandisa `ShonaScript` ne `Dhaga` pamwe chete
+
+
+Pakupera kwe topic ino, uchaona `table` ichakuratidza ma `nicknames`
+
+
+
+
+
+export const DuoImage = (props) => (
+    <div style={{backgroundColor:"", textAlign: "center", display: "flex", JustifyContent: "evenly"}}>
+        <div style={{ width:"90%" }}>
+                <img src={props.source1} style={{borderRadius: "0px", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px"}} width="95%"></img> 
+        </div>
+         <div style={{ width:"90%" }}>
+                <img src={props.source2} style={{borderRadius: "0px", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px"}} width="95%"></img> 
+        </div>
+    </div>
+);
+
+export const Image = ({source}) => (
+    <div style={{backgroundColor:"", textAlign: "center"}}>
+        <div style={{ width:"90%" }}>
+                <img src={source} style={{borderRadius: "0px", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px"}} width="95%"></img> 
+        </div>
+    </div>
+)
+
+
+export const Question = ({text}) =>    (
+        <div style={{display: "flex",alignItems:"center",  width: "80%", minHeight: "100px", backgroundColor: "#FFEDC4", borderRadius: "10px", padding: "5px", margin: "auto", border: "solid", borderWidth: "1px", borderColor: "rgba(0,0,0,0.1)", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px", marginBottom: "10px"}}>
+         <div style={{flex: 2, fontSize: "14px"}}>{text}</div> 
+        <div style={{flex: 1, display:'flex', alignItems: "center"}}>
+            <img src="/img/question (1).png" height="100px">
+            </img>
+        </div>
+        </div>
+    )

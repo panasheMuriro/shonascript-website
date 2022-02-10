@@ -1,0 +1,49 @@
+---
+sidebar_position: 4
+---
+
+# Bhatani
+
+
+`Mabhatani` anoshandiswa kana uchida kuti chimwe chinhu chiitike mushure mekunge munhu abaya pa `website` yako.
+`Mabhatani` anowanikwa pama `website` akawanda uye muma `application` anoshanda muphone yako.
+
+Unoisa mabhatani uchishandisa `bt` seizvi:
+
+```
+bt:
+;
+```
+
+Uchazoziva zvakawanda zvinonakidza zvema bhatani kana tave kushandisa `ShonaScript` mu `Dhaga`.`ShonaScript` ndiyo ichange yaakuita kuti zvinhu zvichinje mushure mekunge munhu abaya bhatani pa website yako.
+Hapana musiyano wakanyanya pakati pe `box` ne `bhatani`, asi chine basa ndechekuziva kuti `box` rinoisirwa zvinhu zvese asi `bhatani` rinoiswa mashoko kana `icon`. 
+Uchazoona kuti ma `icon` chii pa topid yema `icon`.
+
+Zvese zvaunokwanisa kuchinja pamamiriro e `box` unokwanisa kuchinjawo pama miriro e `bhatani`.
+
+<DuoImage source1="/img/bt1.jpg" source2="/img/bt1.1.jpg"/>
+
+:::info chii chikuitika apa
+- Taumba `bhatani` tichishandisa `bt`
+    - tachinja `color ye bhatani`,`color yemashoko`, `makona`, `kufara`, ne `kureba` kwakaita sekuchinja kwatinongoita pa `box`
+- `Bhatani` rako iri ukaribaya hapana zvinoitika nekuti harishande kana pasina code ye ShonaScript. Uchazoona kumberi kuti tinoshandisa `ShonaScript` mu `Dhaga` sei 
+:::
+
+Mazuva ano mamwe mabhatani aunoona pama website kana pamaapplication anenge aine ma `icon` , asina kunyorwa chinhu mukati.
+Application ye ShonaScript ine mabhatani aunoshandisa aye kana wapedza kunyora `code`, kana kuti waakudzokera kunonyora `code`. 
+Ukamatarisa ma `bhatani` aya, ane ma `icon` asi haana kunyorwa chinhu mukati.
+Tichaedza kumagadzira ma bhatani aya pane `topic` iri kutevera
+
+export const DuoImage = (props) => (
+    <div style={{backgroundColor:"", textAlign: "center", display: "flex", JustifyContent: "evenly"}}>
+        <div style={{ width:"90%" }}>
+                <img src={props.source1} style={{borderRadius: "0px", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px"}} width="95%"></img> 
+        </div>
+         <div style={{ width:"90%" }}>
+                <img src={props.source2} style={{borderRadius: "0px", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px"}} width="95%"></img> 
+        </div>
+    </div>
+);
+
+
+

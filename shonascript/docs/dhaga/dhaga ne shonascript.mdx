@@ -1,0 +1,536 @@
+---
+sidebar_position: 7
+---
+
+# Dhaga ne ShonaScript
+
+Apa ndopauchaona zvinhu kunyora `code` kwave kuita kunge `magic`, saka gadzirira.
+
+
+## Box ne Bhatani
+Tave kudzokera ku `box` ne `bhatani`. Taona kuti bhatani ne box zvinogadzirwa sei kumashure, asi ma bhatani edu asinga asinga shande nekuti haana kupihwa zvekuita zvacho kana munhu achinge amabaya. 
+Taakuda kuumba zvinhu izvi:
+1. `box` re `green`
+2. `bhatani` rekutanga rekuti munhu akabaya, `box` rinochinja kuita `red`
+3. `bhatani` rechi 2 rekuti munhu akabaya, `box` rinochinja kuita `green`
+Tikuda kuedza kuteedzera zvinoita `traffic light` muroad richimisa mota 
+
+Kuti Uzoudza ShonaScript zvekuita nema `box`, kana munhu achinge abaya ma `bhatani` unofana kupa zvinhu zvese izvi mazita kunge `mavariables`. 
+Panguva ino unotarisirwa kunge uchiziva kuti `mavariables` anobvumidzwa akaita sei sezvakatsanangurwa mu ShonaScript. Saka tichapa mazita aya:
+- `box` - boxOne
+- `bhatani` rekutanga - btOne
+- `bhatani` rechi 2 - btTwo
+
+zita racho rinongonyorwa pamberi pe chinhu chacho sokuti:
+```
+box boxOne:
+;
+```
+
+Tichabva taudza shonascript kuti kana munhu abaya bhatani rekutanga `btOne`, chinja `color` ye `boxOne` kuita `green`. Pakubayawo bhatani `btTwo`, chinja `color` ye `boxOne` kuita `red`
+
+Unoshandisa shonascript mudhaga seizvi:
+```
+shonascript{
+
+}
+```
+Izvi ndizvo zvinoratidza kuti waakuisa shonascript ichashanda ne `Dhaga` iri muma `brackets` ayo.
+
+<MultipleImages imageSources={["/img/ss1.jpg", "/img/ss1.1.jpg", "/img/ss1.2.jpg"]}/>
+
+:::info chii chikuitika apa
+- Tagadzira `box` rine `kf-10`, `kr-10`, tobva tabvisa makona na `kn-10`
+- Tagadzira mabhatani 2 re green richazoita kuti box richinje kuita green, nere red richazoita kuti `box` richinje kuita `red`
+- Tanyora ShonaScript inoita kuti kana munhu abaya `btOne`, `box` riite green, asi kana abayawo `btTwo`, `box` riite `red`
+
+
+**ShonaScript yashanda apa**
+ShonaScript yatiri kushandisa apa ndiyo yekare, asi yakawedzerwa zvimwe zvinhu zvinoita kuti ugone kuishandisa ne `Dhaga`. 
+Ngatitarise ShonaScript yatashandisa apa.
+
+```
+pakubaya btOne {
+
+}
+```
+Apa tinenge tichiudza ShonaScript kuti _pakubayiwa kwa `btOne`_, ita izvi zviri muma brackets
+
+```
+pakubaya btOne {
+    pa boxOne chinja c kuita "red"
+}
+```
+Apa tikudza ShonaScript kuti kana munhu abaya `btOne`, enda pana `boxOne`, obva wachinja `c`, apa `c` ndiyo `color` iye ye `box`, kuita `red`.
+Ukasaisa ma `quotes` pana `red`, ShonaScript ichafunga kuti red wacho i`variable`, saka ichaedza kutsvaga kuti `variable` yacho yambogadzirwa here mu shonascript. Kana variable iyi isina kumbogadzirwa, unoudzwa kuti `paita problem`.
+
+::::
+
+### Zvimwe Zvaunogona kuchinja
+
+Pamusoro apa tangochinja `color` tichishandisa `c`
+Unogona kuchinjawo izvi:
+
+|Chekuchinja|Muenzaniso|
+|---|---|
+|c - color |pa boxOne chinja c kuita "red" |
+|ms - mashoko | pa boxOne chinja ms kuita "Zita rako" |
+|kn - kona | pa boxOne chinja kn kuita 4 |
+|kf - kufara(width) | pa boxOne chinja kf kuita 2 |
+|kr - kureba(length) | pa boxOne chinja kr kuita 3 |
+|ms-c  - color yemashoko | pa boxOne chinja ms-c kuita "purple" |
+|v  - viga `box` | pa boxOne chinja v kuita "hongu" kana kuti  pa boxOne chinja v kuita "kwete" |
+
+Chine basa apa kuziva zvaukuda kuchinja pa `box` rako, hazvireve kuti unofana kuchinja zvinhu zvese zvepa `box`
+
+###  Kuona zvinhu zvebox
+
+Taona kuti unogona kuchinja zvinhu zvepa box kana zviri mukati macho uchishandisa 
+```
+pa boxOne chinja c kuita "red"
+```
+Unogon kunge uchida kuona kuti `c` wacho wepa `box` ndiani. Apa unenge uchiedza kumutora `c` iyeye woita zvaunoda naye, seizvi
+
+```
+pakubaya btOne{
+    x = pa boxOne tora c
+    nyora(x)
+}
+```
+
+Apa tatora c pa bx one tichishandisa `pa boxOne tora c`, tobva tagadzira `variable` yacho yezvatinowana ipapo.
+Pazasi pacho tazotuma shonascript kuti ichinyora `variable iyi` 
+
+<MultipleImages imageSources={["/img/ss2.jpg", "/img/ss2.1.jpg"]}/>
+
+:::info chii chikutika apa
+- Tabvisa btTwo kubva mu `Dhaga`
+- Mu ShonaScript, tashandisa `pa boxOne tora c` kuti titore `color`, tobva tagadzira variable inonzi `x` ye color iyoyo
+- Tashandisa `nyora(x)` kunyora variable x yagadzirwa pa `line 11`
+- Nyora anoburitsa `box` rakanyorwa zvinhu zvacho zvawatuma `ShonaScript` kuti ikunyorere, saka apa pabuda oakanzi `green`, zvechokwadiwo, `boxOne` wedu tamupa `c-green` mu `Dhaga`
+:::
+
+### Kutora zviri emu box
+Unokwanisa kutora mashoko arimu`box` rinonzi `boxOne` uchishandisa `ms` seizvi:
+
+```
+pa boxOne tora ms
+```
+Kana mubox muinewo nhamba chete pasina chimwe chinhu, unoitora nhamba iyoyo uchishandisa `nm` seizvi:
+
+```
+pa boxOne tora nm
+```
+
+Musiyano ur pakati pemashoko nenhamba ndewekuti mashoko haakwanise kusanganiswa sezvinoita ma nhamba sokuti `1+1` inokupa `2`
+Ukaedza kusanganisa mashoko sokuti 
+```
+"panashe" + "muriro"
+```
+panobuda `panashe muriro`, mashoko aya haana kusanganisw, asi abatanidzwa, saka ndiwo musiyano uripo
+
+Saka izvi zvinoreva kuti ukaenda mu shonascript ukanyora
+```
+"2"+"2"
+```
+panobuda `22`, hazvisi kureva `maths` yekuti kuti `2+2` inoburitsa `22`, asi zvikureva kuti mashoko ekuti "2" na "2" vabatanidzwa kuita `22`
+
+Izvi zvakakosha kunzwisisa nekuti kana uine nhamba mu `box` sokuti
+```
+box boxOne:
+23
+;
+
+```
+obva waudza `ShonaScript` kuti tora mashoko arimu box uchishandisa
+```
+x = pa boxOne tora ms
+```
+ShonaScript inokupa x ari "23" apa, zvichireva kuti ukazoedza kuda kusanganisa x uye ne imwe nhamba sokuti 20
+ShonaScript inotarisa zvinhu izvi sokuti
+```
+"23"+20
+```
+Nekuti ukuda kuedza kusanganisa mashoko ne nhamba, ShonaScript ichangobatanidza zvinhu izvi kuita `23 20` nekuti haukwanise kusanganisa `mashoko` ne nhamba
+
+Chitarisa zvikutika apa
+
+
+<MultipleImages imageSources={["/img/ss3.jpg", "/img/ss3.1.jpg"]}/>
+
+:::info chii chinkuitika apa
+- Tatora mashoko arimu`boxOne` tichishandisa `ms`. Nhamba 23 irimo mu `boxOne` ichaonekwa semashoko kuti "23"
+- Taedza kusanganisa mashoko aye ne nhamba 20, tobva tagadzira `variable` inonzi y, yatichazonyora kuti tione kuti zvii zvaitika
+- Pabuda 23 20, saka apa hapana kusanganiswa ma mashoko ne nhamba, asi zvabatanidzwa
+:::
+
+<MultipleImages imageSources={["/img/ss4.jpg", "/img/ss4.1.jpg"]}/>
+
+:::info chii chikuitika apa
+- Tatora nhamba irimu`boxOne` tichishandisa `nm`. 
+- Tasanganisa nhamba iyi neimwe nhamba, izvi zvnosanganisika
+- Panobuda 43 nekuti ndiyo 20 + 23
+:::
+
+
+### Chinonzi Website ne Web Application
+
+Kumashure uku tanga tichinyanya kutaura kuti `website`. 
+Apa nekuti taakushandisa ma bhatani tichiita kuti munhu abaye achichinja zvinhu, tinenge tichigadzira inonzi `web application`. 
+Musiyano uripo pakati pe `website` ne `web application` ndewekuti `website` inonyanya kunge iri yekuverenga zvinhu pasina zvakawanda wanda zvekubaya kana kuchinja, asi `web application` inoita mabhatani akawanda uye pane kuchinja chinja kunenge kuitika ipapo.
+Kana ukaenda pa google wotanga kushandisa application ye`ShonaScript`, unenge uchisahndisa `web application` ipapo. Whatsapp haisi `web application`, itongori `application` yemuphone chaiyo. 
+Makhambani anoshandisa ma `website` kuti vaudze vanhu basa ravanoita uye kuti kuratidza ma `picture` ebasa ravo.
+
+`Web application` yakaoma kugadzira kupfuura `website`.
+
+Ukaona uchinyora `code` ye `Dhaga` pasina `ShonaScript`, unobva waziva kuti ukugadzira `website`. Ukazotanga kunyora `ShonaScript` mu `Dhaga`, unobva waziva kuti ukugadzira `web application`
+
+### Zvekuita 
+Gadzira `web application` ine zvinhu izvi:
+1. Box rine:
+    -  zita rekuti `boxOne`
+    - `kf-10`
+    - `kr-10`
+    - mashoko ari pakati
+    - mashoko akakura `ms-sz-4`
+    - mashoko akakora `ms-uk-4`
+    - `color` ye `box` yaunoda
+    - `color` yemashoko yaunoda
+2. Bhatani rine:
+    - icon ye yekubvisa `minus`➖
+    - zita rekuti btOne
+3. Bhatani rine
+    - icon yekusanganisa `plus`✖️
+    - zita rekuti btTwo
+4. ShonaScript:
+    - pakubaya btOne 
+
+
+<MultipleImages imageSources={["/img/ss5.jpg", "/img/ss5.1.jpg", "/img/ss5.2.jpg"]}/>
+
+
+## Kuisa mashoko kubva mulist
+
+Ngatimboti une `list` mu `shonascript`, ukuda kuona zvinhu izvi zviri mulist pa `application` yako, unongoshandisa `ms` zvekare kuita izvi. 
+
+```
+box boxOne:
+;
+
+shonascript{
+vanhu = ["Tadiwa", "Rumbi", "Kudzi"];
+pa boxOne chinja ms kuita vanhu
+}
+```
+<MultipleImages imageSources={["/img/ss6.jpg", "/img/ss6.1.jpg"]}/>
+
+:::chii chikuitika apa
+- Tagadzira `box` rinonzi `boxOne`
+- Tashandisa shonascript kuichinja zviri mu`box` kuita zvinhu zvese zviri mu `list`
+    - zvinhu zviri mulist zvinorongwa zvichidzika sezvikuoneka pa `picture` iyi
+:::
+
+
+
+
+## Teerera mhinduro
+
+Unoshandisa teerera mhinduro kana uchida kuti munhu anyore mashoko mu application yako. 
+Kuti uzotore zvinhu zvinenge zvanyorwa nemunhu mu`box` re `teerera munduro` unongohsnadisa tora `ms` sezvatanga tichiita pa `box`.
+
+:::success Zvekuita
+Tikuda kugadzira zvinhu izvi:
+1. box rine:
+- `kf-10`
+- `kr-10`
+- `color` chero yatinofarira
+- zita rekuti `boxOne`
+2. teerera mhinduro `tm` ane:
+- `kf-10`
+- `color` chero yatinofarira
+- zita rekuti `tmOne`
+3. bhatani rine:
+- mashoko ekuti `chinja color`
+- `kf-3`
+- `kn-2`
+- zita rekuti `btOne`
+
+4. shonascript
+- pakubaya `btOne`
+- pa tmOne tora ms
+- gadzira variable ye `pa tmOne tora ms`
+- pa boxOne chinja c kuita color inenge yanyorwa nemunhu mu `tmOne`
+
+:::
+
+<MultipleImages imageSources={["/img/ss7.jpg", "/img/ss7.1.jpg"]}/>
+
+Kana ukanyora color mu tmOne umo wobaya bhatani, uchaona kuti boxOne achachinja color.
+Unogona kunyora ma color anotanga na `#` aye arikumberi kwebhuku zvekare.
+
+:::success Zvekuita 
+
+Taakudzokera ku topic ye ma `list` yeku shonascript. Kuti unzwisise `list` zvekare, pakatsanangurwa kuti iwewe kana uchinge uchida kunotenga zvinhu, wobva wanyora pasi zvinhu zvacho, unenge uchinyora `list`.
+Tikuda kugadzira `aplication` ine `list` ratichange tichiisa zvinhu zvatiri kuda kunotenga pamusika. Chakakosha kuziva kuti tchashandisa chii kugadzira application iyi. Izvi ndizvo zvatichashandisa:
+1. box rektanga rine:
+- `kf-10`
+- `kr-2`
+- mashoko ekuti Shopping List, kana kuti zvimwe zvaunoda kunyora 
+- unogona kuchinja color yemashoko ne box racho kuita ma `color` aunofarira
+- Hatisi kuda kuchinja chinhu ne shonascript pa box iri, saka usaripe zita
+2. box rechi 2  rine:
+- zita rekuti `bxOne`
+- `kf-10`
+- `kr-10`
+- color yaunoda, tichatsvaga color yakarerekera ku `white`
+
+3. teerera mhinduro ine:
+- zita rekuti `tmOne`
+- color yakarerekera ku white
+- `kf-10`
+- `kr-10`
+
+4. bhatani rine:
+- zita rekuti `btOne`
+- color yaunoda
+- icon ye kusanganisa (`plus`)✖️ 
+- `kf-2`
+- `kf-2`
+- `kn-10`
+
+5. ShonaScript:
+- Munhu acahatanga anyora zvaari kuda kunotenga pamusika
+- gadzira list rako, asi usaise chinhu - `zvinhu = []`
+- pakubaya btOne
+- pa tmOne tora ms anyorwa ne munhu
+- gadzira variable yemashoko aya  - `x = pa tmOne tora ms`
+- chiisa variable iyi mu - `zvinhu.isa(x)`
+- chinja mashoko arimu `boxOne` kuita zvhinhu - `pa boxOne chinja ms kuita zvinhu`
+:::
+
+<MultipleImages imageSources={["/img/ss8.1.jpg", "/img/ss8.jpg"]}/>
+
+Ukanyora zvinhu mu `tmOne` wobaya bhatani `btOne`, unoona kuti zvawanyora zvave mu box. 
+Izvi zvinotika nekuti `list` rako rezvinhu rawagadzira rawedzerwa nechinhu chawanyora mu `tmOne`.
+
+
+:::success Zvekuita
+Chiisa rimwe bhatani rekuti kana munhu anyora mu `tmOne`, anobva abvisa zvaanyora izvozvo mu`list` re zvinhu riye.
+:::
+
+<MultipleImages imageSources={["/img/ss9.jpg", "/img/ss9.1.jpg", "/img/ss9.2.jpg", "/img/ss9.3.jpg"]}/>
+
+## Kugadzira box ne ShonaScript
+
+Ngatimboti ukuda kugadzira ma`box` akafanana ari 10, unogona kutongogadzira mabox aya ari 10 mu dhaga seizvi:
+
+```
+box:
+;
+box:
+;
+box:
+;
+box:
+;
+box:
+;
+box:
+;
+box:
+;
+box:
+;
+box:
+;
+box:
+;
+```
+
+Izvi zvinoreva kuti kana ichida kugadzira 1000 ma`box` akafanana, unenge waakufana kunyora maline akawandisa e code ye `Dhaga`. 
+Ukaenda mu whatsapp, unoona kuti pamunhu wega wega waunotaura naye, panenge paine `picture`, `zita`, ne message yapedzisira kutumirwa kana kuti kusvika. 
+Aya angori ma `box` akafanana asi obva azongosiyana zviri mukati mawo, zvinoti: `picture`,`zita` ne `message`. 
+
+Ngatimboti ukuda kugadzira mabox 5 ane mazita aya "Taku", "Sandra","Ruvimbo", "Tatenda", "Danai". Tichatarisa nzira 2 dzaunogona kushandisa kuti zviitike
+
+#### 1. Kushandisa Dhaga chete
+<MultipleImages imageSources={["/img/ss10.jpg", "/img/ss10.1.jpg"]}/>
+
+:::info chii chikuitika apa
+- Taumba ma`box` 5 aya tichiumba `box` rimwe ne rimwe ne `Dhaga`
+- Kana tchida kuumba ma box 1000, zvinoreva kuti tinenge tichifana kutonyora ma line e `Dhaga` anopfuura 1000, maline aya akawandisa uye tinenge tichizvipa basa rakawanda kana tikada kushandisa nizra iyi
+:::
+
+#### 2. Kushandisa ShonaScript ne Dhaga
+<MultipleImages imageSources={["/img/ss10.jpg", "/img/ss10.1.jpg"]}/>
+
+:::info chii chikutika apa
+- Taumba `box` rekubata nzvimbo mu `Dhaga` rinonzi `boxTwo`. 
+    - `box`  rekubata nzvimbo rakangofanana ne hembe dzaunoona dzakapfekedzwa zvidhori mu shop ye hembe. Hembe idzi dzinenge dziri dzekuti vanhu vaone kuti dzinobuda sei kana dzapfekwa, asi panozita dzimwe dzakangofana dzinenge dzichitengeswa.
+    Mu`boxTwo` taisa `variable` inonzi `zita-ss`, izvi zvinoreva kuti variable iyi inonzi `zita`, asi ichabva ku `ShonaScript`.
+- Taumba box rekutanga rinonzi `boxOne`, umu ndimo matichazoisa ma `box` atichaumba tichishandisa `boxTwo` muShonaScript.
+Mu ShonaScript:
+- Tagadzira `list` revanhu `["Taku", "Sandra","Ruvimbo", "Tatenda", "Danai"]`
+- Tapinda mu`list` tichishandisa `pane munhu nu vanhu`
+- Tichinge tapinda mu list tiri pane munhu wekutanga, Taku, tichaita izvi:
+    - Tichatora `boxTwo` rekubata nzvimbo riye tikagadzira variable tichishandisa `x = pa boxTwo tora box`
+    - Tichinge tave naro, tichachinja variable iya inonzi zita oichinja kuita munhu arimu `list` tichiti `ss-zita-x`, izvi zvinoreva kuti ShonaScript ngaichitora variable iya inonzi `zita` yepa `x`, `x` ndiro `boxTwo` ratagadzira pamusoro.
+    - Saka kana tiri pana `Taku`, tinenge tave ne `box` rine mashoko ekuti Taku mukati.
+    - Kuti tizoisa box iri pa `website`, unenge waakufana kuriisa mukati merimwe `box`, apa `boxOne` ndiro ratagadzira richapinda ma `box` arikubva kuShonaScript 
+    - `x` ave `box` rine mashoko ekuti Taku mukati, kuti tiriise mukati me rimwe box riri mu `Dhaga`, tinenge tave kushandisa 
+    `pa boxOne wedzera box ne x`
+    - Apa hatisikuchinja zviri mu `boxOne`, asi kuti tiri kuda kuwedzera pane zviri mubox imomo
+        - Chimboedza kufunga kuti chii chinoitika kana ukshandisa `pa boxOne chinja box kuita x`
+    - Tikabva pana Taku taakuenda pana Sandra, tichatora `boxTwo` riya rekubata nvzimbo zvekare, tongoita sezvataita pekutanga, zvichingodaro
+    - Uchaoona kuti ma `box` 5 anogadzirika. 
+:::
+
+:::success Zvekuita
+- Enda mu `list` revanhu mu ShonaScript, chiwedzera mazita evanhu nemamwe aunoda
+- Chitarisa kuti panobuda ma `box` mangani
+::: 
+
+Apa taona kuti mashoko arimubox ragadzirwa ne ShonaScript anochinjwa sei, unogonawo kuchinja mamiriro ebox cuhishandisa nzira iyi. 
+Ngatimboti une list rema `color`, `["red","yellow","blue","purple","black"]`, unogona kugadzira mabox ane ma color aya uchishandisa ShonaScript sezvatongoita pamusoro apa.
+
+
+<MultipleImages imageSources={["/img/ss12.jpg", "/img/ss12.1.jpg"]}/>
+
+:::info chii chikuitika apa
+- Tine `boxTwo`, asi `color` ye `box` iri tikuda kuti ibve ku ShonaScript, saka taisa `c-ss`, pane kuti `c-red`. Izvi zvinoreva kuti `c` acabva kuShonaScript.
+Mu ShonaScript:
+- Tazoti `ss-c-x = color` zvichireva kuti ShonaScript ngaichichinja `c` uye wepa `box` ratatora `x` kuita `color` irikubva mu `list`. 
+:::
+
+:::note Kushandisa `bhegi`
+- Unogona kuda kuchinja `color` zvese nemashoko arimukati, sokuti ukuda kuti box rakanyorwa kuti Taku, riite red, ozoda kuti `box` rakanyorwa kuti Sandra riite `purple`.
+- Izvi zvinokwanisika uchishandisa chinonzi `bhegi` mu ShonaScript
+:::
+
+## Chii chinonzi bhegi?
+Kuti unzwisise chinonzi `bhegi` mu ShonaScript, ngatimboti iwewe une list remazita evanhu seizvi:
+```
+zvinhu = ["madomasi", "zumbani","mango"]
+```
+Dambudziko riripo pa `list` rakadai nderekuti ungorine nemazita ezvinhu zvaukuda kunotenga pamusika chete pasina zvimwe. Ngatimboti iwewe ukuda kuti `list` rako riratidze mari inokwana kutenga chinhu chimwe nechimwe chiri mu list rako sokut:
+```
+madomasi anoita $3
+zumbani rinoita $1
+mango dzinoita $2
+```
+Kana ukada kushandisa `list` remashoko, zvinonetsa kuti uronge zvinhu izvi nemari yazvo. Apa ndipo panoshanda `bhegi`.
+`Bhegi` ririkutaurwa nezvaro apa ndiwo ma`bhegi` aunoziva. Chine basa kuziva apa ndechekuti `bhegi` rine `homwe`. 
+`Bhegi` rinogona kuita `homwe` dzakasiyana siyana, dzepakati, dzepaside, dzekunze zvichingodaro.
+Isusu kana tichifunga nezvebhegi, tiri kuda kupa homwe dzebhegi mazita akasiyana siyana sokuti tichapa imwe homwe dze`bhegi` redu mazita ekuti `zita` ne `mari`.
+Muhomwe inonzi zita, tichaisa zita rechinhu chikuda kunotengwa chacho, tozoisa mari ichashandiswa mu homwe inonzi `mari`.
+
+Unoita izvi muShonaScript sokudai:
+```
+{"zita": "madomasi", "mari": 3}
+```
+Uku ndiko kutogadzira bhegi rine homwe yekutanga inonzi `zita` ine zita rechinhu chikuda kutengwa, yozoita imwe homwe inonzi `mari` ine nhamba yamari yacho ichashandiswa.
+Kana waakuda kuona zviri muhomwe inonzi `zita`, unotanga wagadzira variable ye bhegi iri seizvi:
+```
+x = {"zita": "madomasi", "mari": 3}
+```
+Apa tiri kuti `x` ndiro bhegi redu ratagadzira, tinovhura homwe inonzi zita seizvi:
+
+```
+x["zita"]
+```
+Kuti tione kuti chiinobuda kana tavhura homwe iyi, tinenge tave kugadzira `variable` yatinozonyora kuti tione kuti zvii zvikuitika.
+Taakudzokera ku ShonaScript 
+
+<MultipleImages imageSources={["/img/ss13.jpg", "/img/ss13.1.jpg"]}/>
+
+:::info chii chikuitika apa
+- Apa tadzokera ku ShonaScript
+    - baya `bhatani` riri pazasi pe screen ku `right`, woenda pakanzi `ShonaScript`
+- Tagadzira bhegi rinonzi `x` rine homwe inonzi `zita` ine `"madomasi"`, ne imwe homwe inonzi `mari` ine `3`
+- Tavhura homwe inonzi `zita`, tobva tagadzira `variable` yezvinhu izvi inonzi `y`
+- Tavhura homwe inonzi `mari`, tobva tagadzira `variable` yezvinhu izvi inonzi `z`
+- Tanyora ma `variables` aya kuti tione kuti zvii zvinobuda
+    - `y` aburitsa `"madomasi"` ndiyo homwe yezita yatavhura ne `x["zita"]`
+    - `z` aburitsa `3` ndiyo homwe yezita yatavhura ne `x["mari"]`
+:::
+
+
+Saka pane kuti uve ne `list` remashoko, unogona kuva ne `list` rema`bhegi` sokuti:
+
+```
+zvinhu = [
+    {"zita": "madomasi", "mari": 3},
+    {"zita": "zumbani", "mari":1},
+    {"zita": "mango", "mari": 2}
+]
+```
+Kana uine list rakadai, unogona kupinda mariri uchishandisa `pane chinhu mu zvinhu` sokuti:
+
+```
+pane chinhu mu zvinhu{
+
+}
+```
+Apa chine basa kunzwisisa ndechekuti kana wapinda mu list iri ne `variable` inonzi `chinhu`, `variable` ichange ichichinja kuita `bhegi` kusvika wabuda.
+Kana uri pane chinhu chekutanga, `chinhu` anoita `chinhu = {"zita": "madomasi", "mari": 3}`, saka kana waakuda kuona kuti pabude zvinhu zviri muhomwe inonzi `"zita"`, unenge waakuvhura homwe seizvi `chinhu["zita"]`.
+
+<MultipleImages imageSources={["/img/ss15.jpg", "/img/ss15.1.jpg"]}/>
+
+:::info chii chikuitika apa
+- Tagadzira list rezvinhu zvatikuda kunotenga
+- Tapinda mu list ne `variable` inzonzi chinhu -`pane chinhu mu zvinhu`
+- Tanyora `chinhu` pa line 7 kuti tione kuti panobuda chii
+    - apa pabuda `bhegi` rine homwe ne zviri muhomwe macho sokuti ` {"zita": "madomasi", "mari": 3}`
+- Tavhura homwe inonzi `zita` tichishandisa `chinhu["zita"]`, tobva tagadzira variable inonzi `x` yatazonyora paline 9
+:::
+
+Taakuda kudzokera ku `Dhaga` tonoshandisa list re `bhegi` kuchinja mashoko ne color
+:::success Zvekuita
+- Wakapihwa list rema bhegi rakadai:
+```
+zvinhu = [
+    {"zita": "Taku", "color": "red"},
+    {"zita": "Sandra", "color": "blue"},
+    {"zita": "Ruvimbo", "color": "green"},
+    
+]
+```
+- Gadzira `box` rinonzi `boxOne` richapinda ma `box` achabva kuShonaScript
+- Gadzira  rimwe `box` pazasi rinonzi `boxTwo` mudhaga, rine `c-ss`, ne mashoko mukati ekuti `zita-ss` zvichabva ku ShonaScript sezvatamboita kumashure
+Mu ShonaScript
+- gadzira variable inonzi x yoita `boxTwo` seizvi:
+```
+x = pa boxTwo tora box
+```
+- pinda mu list remabhegi, `zvinhu`, nevariable inonzi `chinhu` seizvi
+```
+pane chinhu mu zvinhu{
+
+}
+```
+- vhura homwe inonzi zita, ochinja `variable` iya yabva ku `Dhaga` inzonzi `zita-ss`  yepa`box` ratatora kuita
+```
+ss-zita-x = chinhu["zita"]
+``` 
+- Ita izvi kuchinja color
+```
+ss-c-x = chinhu["color"]
+```
+- chiwedzera `box` iri mu `boxOne`
+:::
+
+<MultipleImages imageSources={["/img/ss16.jpg", "/img/ss16.1.jpg"]}/>
+
+export const MultipleImages = (props) => (
+    <div style={{display: "flex"}}>
+    {props.imageSources.map(x=><div style={{backgroundColor:"", textAlign: "center", display: "flex", JustifyContent: "evenly"}}>
+        <div style={{ width:"95%" }}>
+                <img src={x} style={{borderRadius: "0px", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px"}} width="95%"></img> 
+        </div>      
+        </div>  
+ )}
+ </div>
+);
+
+
+ 
