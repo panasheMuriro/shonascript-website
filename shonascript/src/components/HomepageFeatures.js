@@ -9,7 +9,7 @@ const FeatureList = [
     image: '/img/feature1.png',
     description: (
       <>
-      Kana urikuda kudzidzira kunyora code, and kana uchiziva Shona, then ndiwe unokwanisa kushandisa ShonaScript
+      Kana urikuda kudzidzira kunyora code, and kana uchiziva Shona, then ndiwe unokwanisa kushandisa ShonaScript + Dhaga
       </>
     ),
   },
