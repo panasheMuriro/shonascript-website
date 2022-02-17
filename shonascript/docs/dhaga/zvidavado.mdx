@@ -3,14 +3,523 @@ sidebar_position: 9
 ---
 
 # Zvidavado
-- need about 15 of these
 
-### Bhatani ne Flag ye Zimbabwe
+Pazasi pane ma website nema web applicaton akasiyana siyana akagadzirwa kuti uone zvimwe zvaunogona kuita uchishandisa Dhaga ne ShonaScript
 
-### Calculator
+### 1. Bulb re Light
 
-### Website ye Econet
+Tikuda kugadzira `bulb` re`light`. `bulb` rinobatidzwa kana kudzimwa zvichienderana ne nguva.
+Isusu tikuda kuita izvi:
 
-### Gallery rema Picture
+- Kugadzira `peji` re `black`
+- Kugadzira `box` re `black`
+- togadzira ma `bhatani` 2: 1 nderekubatidza, rimwe ndere kudzima.
+- kubatidza `bulb` kuchinja `color` ye `box` kuita `yellow`, uye kudzima kuchinja `color` ye `box` kuita `black`
 
-### Singup from
+:::success Zvekuita
+- chinja `color` ye peji kuita `black` ~ `peji-c-black`
+- Gadzira `box` rine zvinhu izvi:
+  - zita rekuita `boxOne`
+  - `kf-10`
+  - `kr-10`
+  - `c-black`
+  - `kn-10`
+  - nekuti `box` ndere `black`, uye `peji` ndere `black`, harioneke, kuita kunge riri murima
+
+- Gadzira `bhatani` rine zvinhu izvi:
+  - zita rekuti `btOne`
+  - `kf-4`
+  - `kr-1.2`
+  - `c-white`
+  - `ms-sz-1.2`
+  - mukati me `box` nyora kuti `batidza`
+
+- Gadzira `bhatani` rine zvinhu izvi:
+  - zita rekuti `btTwo`
+  - `kf-4`
+  - `kr-1.2`
+  - `c-white`
+  - `ms-sz-1.2`
+  - mukati me `box` nyora kuti `dzima`
+
+**Mu ShonaScript**
+
+Tikuda kuti kana munhu achinge abaya `bhatani` rekudzima, `boxOne` robva rachinja `color` kuita `black`, asi kana munhu abayawo `bhatani` rekubatidza, `boxOne` robva rachinja kuita `yellow`
+
+- pakubaya `btOne`:
+  - `pa boxOne chinja c kuita "yellow"`
+- pakubaya `btTwo`: 
+    - `pa boxOne chinja c kuita "black"`
+:::
+
+
+<MultipleImages
+  imageSources={["/img/dv7.jpg", "/img/dv7.1.jpg", "/img/dv7.2.jpg"]}
+/>
+
+
+---
+### 2. Flag ye Zimbabwe 2
+
+Takagadzira flag ye Zimbabwe kumashure tichishandisa ma `box`. Ikozvino tikuda kushandisa ShonaScript kuti munhu akabaya `bhatani`, ma `color` epa flag anobva abuda.
+
+:::success zvekuita
+
+- Gadzira ma `box` seven ane zvinhu izvi:
+  - `color` ye `gray` ~ `c-gray`
+  - `kf-10`
+  - pa flag ye Zimbabwe, pane ma line e flag 2 e green, 2 e red, 2 e yellow, ne one re black.
+    - Tikuda kuti ma box 2, ane macolor akafanana aite mazita akafanana, sokuti box rekutanga nerechi 7 zviite zita rakafanana nekuti zvichazochinja kutia color yakafanana
+    - `box` 1 ne `box` 7 - ipa zita rekuti `boxGreen`
+    - `box` 2 ne `box` 6 - ipa zita rekuti `boxYellow`
+    - `box` 3 ne `box` 5 - ipa zita rekuti `boxRed`
+    - `box` 4 - ipa zita rekuti `boxBlack`
+- Gadzira `bhatani` rine zvinhu izvi:
+ - mashoko ekuti `chinja ma color` 
+ - `kf-5`
+ - zita rekuti `btOne`
+
+**Mu ShonaScript**
+- pakubaya btOne, chinja zvinhu izvi:
+ - `color` ye `boxGreen` kuita `green` 
+ - `color` ye `boxYellow` kuita `yellow` 
+ - `color` ye `boxRed` kuti `red` 
+ - `color` ye `boxBlack` kuita `black`
+:::
+
+<MultipleImages imageSources={["/img/dv1.jpg", "/img/dv1.1.jpg"]} />
+<MultipleImages imageSources={["/img/dv1.2.jpg", "/img/dv1.3.jpg"]} />
+Kana uchida uchida kubatsirwa kunzwisisa kuti zvii zviri kuitika, unokwanisa
+kubvunza mu group re whatsapp
+
+---
+
+### 3. Calculator
+Apa tichagadzira ma calculator 3
+
+#### Calculator 1
+
+Kana wakamboshandisa Calculator, unofana kunge uchiziva kuti unopa calculator manhamba, iyo yokuwekera kuti panobuda chii. 
+Tikuda kuedza kuita izvi tchishandisa Dhaga ne ShonaScript.
+Tichagadzira calculator inoshanganisa ma nhamba 2 ainenge yapihwa tichishandisa teerera mhinduro.
+
+:::success zvekuita
+
+- Gadzira musoro wenyaya size 2 `mn2` une zvinhu izvi:
+  - mashoko ekuti `Calculator`
+  - ronga mashoko pa center ~ `rg-c`
+
+- Gadzira `box` rine zvinhu izvi:
+  - zita rekuti `boxOne`
+  - `kf-10`
+  - `kr-3`
+  - `rg-c` ~ ronga mashoko pa center
+  - `color` yaunoda
+- Gadzira `tm` ane zvinhu izvi:
+  - zita rekuti `tmOne`
+  - `kf-10`
+  - `color` yaunoda
+- Gadira mumwe `tm` ane zvinhu izvi:
+  - zita rekuti `tmTwo`
+  - `kf-10`
+  - `color` yaunoda
+- Gadzira `bhatani` rine zvinhu izvi:
+ - zita rekuti `btOne` 
+ - `kf-1.5` 
+ - `kr-1.5` 
+ - `kn-10` 
+ - color yaunoda 
+ - mukati me `box` 
+ - isa icon `ic-93-white-3`, kana kuti chinja white kuita color yaunoda
+
+**Mu ShonaScript**
+
+- munhu acatanga anyora nhamba yekutanga mu tmOne ozonyora imwe nhamba mu tmTwo
+- pakubaya btOne: 
+    - tora nhamba yanyorwa mu tmOne ~ `x = pa tmOne tora nm`
+    - tora nhamba yanyora pa tmTwo ~ `y = pa tmTwo tora nm`
+    - gadzira variable ye answer inobuda kana ukasanganisa `x` na `y` ~ `answer = x + y` 
+    - pa boxOne, chinja mashoko kuita `answer` ~ `pa BoxOne chinja ms kuita answer`
+:::
+
+<MultipleImages
+  imageSources={["/img/dv2.jpg", "/img/dv2.1.jpg", "/img/dv2.2.jpg"]}
+/>
+
+---
+
+#### Calculator 2
+
+Taona kuti unogona kugadzira calculator inongosanganisa ma nhamba 2 sei. Taakuda kugadzira imwe calculator inoweka zvainenge yapihwa tichishandisa `nhamba.weka()`.
+`nhamba.weka()` ano weka maths iri muma brackets odzosa mhinduro ye maths yacho. sokuti
+
+```
+nhamba.weka(2+3)
+```
+
+apa panobuda 5
+
+```
+nhamba.weka("2+3")
+```
+
+Apa panobuda 5 zvekare.
+Unonogona kubvunza kuti `nhamba.weka(2+3)` haana kufanana nekungoti `2+3` here? 
+Chine basa apa kuziva kuti `nhamba.weka()` anonyanya kushandiswa kana uchida kuweka maths dziri mumashoko sokuti `"2+3"`.
+:::info Zvekuita mu ShonaScript
+
+- Enda ku ShonaScript
+- nyora izvi:
+
+```
+y = "2+3"
+nyora(y)
+```
+
+Unoona kuti izvi hazvishande, saka kuti uweke maths iri mumashoko ekuti `"2+3"` unoshandisa `nhamba.weka()`.
+:::
+
+:::success zvekuita
+
+- Gadzira musoro wenyaya une zvinhu:
+  - `mn2`
+  - mashoko ekuti `Calculator`
+  - ronga mashoko pa center ~ `rg-c`
+- Gadzira `box` rine zvinhu izvi:
+  - zita rekuti `boxOne`
+  - `kf-10`
+  - `kr-3`
+  - `rg-c` ~ ronga mashoko pa center
+  - `color` yaunoda
+- Gadzira `tm` ane zvinhu izvi:
+  - zita rekuti `tmOne`
+  - `kf-10`
+  - `color` yaunoda
+- Gadzira `bhatani` rine zvinhu izvi:
+  - zita rekuti `btOne`
+  - `kf-1.5`
+  - `kr-1.5`
+  - `kn-10`
+  - `color` yaunoda
+  - mukati me `box`
+    - isa icon `ic-93-white-3`, kana kuti chinja white kuita color yaunoda
+
+**Mu ShonaScript:**
+
+- munhu achatanga anyora maths yake mu `tmOne` sokuti 2+3-5
+- pakubaya `btOne`:
+
+  - tora mashoko anyora mu `tmOne` ~ `x = pa tmOne tora ms`
+    - apa tiri kuti mashoko nekuti haisi nhamba sokuti `2+3+5` haisi nhamba, saka achave mashoko
+  - shandisa nhamba.weka() kuweka maths iri mumashoko anyorwa ~ `y = nhamba.weka(x)`
+  - pa boxOne chinja mashoko kuita zvawekwa na `nhamba.weka()` ~ `pa boxOne chinja ms kuita y`
+
+:::
+
+<MultipleImages
+  imageSources={["/img/dv3.jpg", "/img/dv3.1.jpg", "/img/dv3.2.jpg"]}
+/>
+
+---
+
+#### Calculator 3
+
+Taakuda kugadzira calculator ine mabhatani ekuti munhu anobaya ma nhamba ozobaya bhatani re `equals` kuti awane answer.
+
+:::success zvekuita
+
+- Gadzira musoro wenyaya une zvinhu:
+  - `mn2`
+  - mashoko ekuti `Calculator`
+  - ronga mashoko pa center ~ `rg-c`
+- Gadzira `box` rine zvinhu izvi:
+  - zita rekuti `boxOne`
+  - `kf-10`
+  - `kr-3`
+  - `rg-c` ~ ronga mashoko pa center
+  - `color` yaunoda
+
+- Gadzira rimwe `box` rine izvi:
+  - `kf-10`
+  - Mukati me box gadzira ma bhatani aya:
+  - rinonzi `btOne` rine `1` mukati
+  - rinonzi `btTwo` rine `1` mukati
+  - rinonzi `btThree` rine `1` mukati
+  - rinonzi `btAdd` rine `+` mukati
+  - rinonzi `btMinus` rine `-` mukati
+  - rinonzi `btEquals` rine `=` mukati
+  - unogona kuchinja mamiriro akaita ma bhatani aya zvinoenderana nezvaunda kana kuti unogona kuona mu `picture` iri pazasi kuti nagu ndamagadzira sei
+
+
+**Mu ShonaScript**
+
+- Tikuda kuti munhu akabaya `btOne` rakanyorwa kuti `1` tiite izvi:
+  - tora mashoko ari mu `boxOne` `a = pa boxOne tora ms`
+  - sanganisa mashoko aya na `"1"` `b = a + "1"`
+    - sokuti kana mu `boxOne` muina 1, tichatora "1" tosanganisa na 1 pobva pabuda kuti 11 kuita `11`, nemamwe mashoko, tiri kuti ukabaya pa calculator nhamba 1, ukabaya zvekare 1 iyeye, unoona 1 achinyorwa kakawanda kuita `11`, `111`, `1111` zvichingodaro
+  - chinja mashoko pa boxOne kuita mashoko abatanidzwa pamusoro ~ `pa boxOne chinja kuita b`
+  - dzokorora izvi pane mamwe ma bhatani asara sezvakaitwa mu `picture` pazasi
+
+- `bhatani` rekupedzisira rinonzi `btEquals` rinofana kutora zviri mu `boxOne`, wobva waweka na `nhamba.weka()`, wozochinja zviri mu `boxOne` kuita zvabuda pawekwa maths yacho.
+  Kana zvikuitika mu `picture` iyi zviri kukunetsa kunzwisisa, unogona kubvunza pa whatsapp wobatsirwa
+:::
+
+<MultipleImages
+  imageSources={["/img/dv4.jpg", "/img/dv4.1.jpg", "/img/dv4.2.jpg"]}
+/>
+<MultipleImages imageSources={["/img/dv4.3.jpg", "/img/dv4.4.jpg"]} />
+
+---
+### Gallery
+
+Tikuda kugadzira application inoita kunge yaunoshandisa kuona ma picture mu phone yako. 
+Tine ma picture 6 kare mu applcation ane manumber 1 kusvika ku 6.
+
+:::success zvekuita
+
+- gadzira `box` rine zvinhu izvi:
+  - zita rekuti `boxOne`
+  - `kf-10`
+  - `kr-10`
+  - `pic-2`
+- gadzira rimwe `box` rine zvinhu izvi:
+  - `rg-sp` ~ ronga zviri mukati asi ngazvipanane space
+  - `kf-10`
+  - mukati me `box` isa mabhatani two aya:
+  - bhatani rekutanga rine izvi:
+    - zita rekuti `btOne`
+    - `kf-2`
+    - `kr-2`
+    - `kn-10`
+    - color yaunoda
+    - `ic-235-white-3` ~ icon ye arrow inonongedza ku left
+  - bhatani rimwe racho rine zvinhu izvi:
+    - zita rekuti `btTwo`
+    - `kf-2`
+    - `kr-2`
+    - `kn-10`
+    - color yaunoda
+    - `ic-240-white-3` ~ icon ye arrow inonongedza ku right
+
+
+**Mu ShonaScript:**
+
+Tikuda kuti kana munhu achinge abaya bhatani rekutanga, tobva tatora `pic` pa boxOne.
+Kana tichinge tatora pic, tinowana nhamba ye `pic` racho, sokuti `2`.
+Kana tave ne nhamba iyi, tinenge tave kukwanisa kubvisa kana kuwedzera, saka tikuda kuti pakubaya bhatani rekutanga, tibvise 1 pa nhamba kuita `2-1 = 1`.
+Pakubaya rimwe bhatani, tikudawo kuti nhamba iwedzere na `1`
+
+- pakubaya `btOne`:
+- tora `pic` pa boxOne, gadzira `variable` ~ `x = pa boxOne tora pic`
+- bvisa `1` kubva pa nhamba iyoyo obva wagadzira imwe `variable` ~ `y = x-1`
+- chinja `pic` pa `boxOne` kuita nhamba yabuda pamsoro ~ `pa boxOne chinja pic kuita y`
+
+- pakubaya `btTwo`:
+- tora `pic` pa `boxOne`, gadzira `variable` ~ `a = pa boxOne tora pic`
+- wedzera `1` pane nhamba iyoyo obva wagadzira imwe `variable` ~ `b = a+1`
+- chinja `pic` pa `boxOne` kuita nhamba yabuda pamsoro ~ `pa boxOne chinja pic kuita b`
+
+:::
+
+<MultipleImages
+  imageSources={["/img/dv5.jpg", "/img/dv5.1.jpg", "/img/dv5.2.jpg"]}
+/>
+
+---
+
+### Valentine's Day card
+
+Tine picture rema roses kare pane ma picture arimu application yeShonaScript. Tikuda kugadzira card re Valentine's tichishandisa picture iyi. Kuti zvinakidze, tikuda kuti kana munhu chinge abaya bhatani ratochagadzira, obva aona pictures yema roses
+
+:::success Zvekuita
+
+- chinja `color` ye `peji` kuita `color` yakarekera ku pink. Tarisa ma color kubva pama color arimubhuku.`peji-c-#f3d5c0`
+- gadzira `box` rine zvinhu izvi:
+  - zita rekuti `boxOne`
+  - color ye black `c-black`
+  - `kf-10`
+  - `kr-10`
+  - `kn-10`
+- gadzira musoro we nyaya size 2 `mn2` une zvinhu izvi:
+
+  - ronga zviri mukati pa center ~ `rg-c`
+  - mashoko mukati ekuti Happy Valentine's Day
+
+- gadzira rimwe `box` rine zvinhu izvi:
+
+  - `kf-10`
+  - `rg-c` ` ronga center
+  - `ms-sz-1.2` ~ size yemashoko 1.2
+  - mukati me box nyora kuti `baya bhatani uone ma roses`
+
+- gadzira rimwe `box` rine zvinhu izvi:
+  - `kf-10`
+  - `rg-c`
+  - mukati me box iri isa bhatani rine zvinhu izvi:
+    - zita rekuti btOne
+    - `kf-4`
+    - `kr-1.2`
+    - color yaunoda
+    - `kn-6`
+    - `ms-sz-1.2`
+    - `ms-c-white`, color yemashoko
+    - mukati me bhatani iri nyora kuti `show roses` kana kuti zvaunoda
+
+**Mu ShonaScript**
+Tiri kuda kuti kana munhu achinge abaya bhatani `btOne`, tobva tachinja `pic` pa `boxOne` kuita nhamba 5 nekuti `pic-5` ndiro rema roses kana ukatarisa muma pictures atakapihwa
+
+- Pakubaya `btOne`: - pa `boxOne` chinja `pic` kuita `5`
+:::
+
+<MultipleImages
+  imageSources={["/img/dv6.jpg", "/img/dv6.1.jpg", "/img/dv6.2.jpg"]}
+/>
+
+---
+
+### Zvitupa (National ID)
+
+Ngatimboti iwewe unoshanda kuzvitupa muZimbabwe.
+Basa rako ndere kuti kana munhu achinge auya kuzotora achitupa, iwewe unomubvunza kuti ane makore mangani, akati 15 zvichidzika, unomuudza kuti achiri mudiki, asi akati 16 zvichikwira, unomuudza kuti aende ku office kunotora chitupa chake.
+Isusu tikuda ku gadzira web application inota izvi.
+Tichada kuti munhu anyora makore ake, obva abaya bhatani rakanzi `ndoita sei`
+Kana munhu achinge anyora makore madiki pana 16, tichada kuti tinyore tichimuudza kuti achiri mudiki, asi kana achinge anyorawo makore 16 avichikwira, tichamuudza kuti aende ku office
+Tinogona kugadzira box ratinozochinja mashoko emukati, uye `color` zvchienderana ne makore anyorwa
+
+:::success Zvekuita
+
+- Gadzira box rine izvi:
+  - zita rekuti boxOne
+  - `rg-c`
+  - `kf-10`
+  - `kr-10`
+- Gadzira rimwe box rine izvi:
+
+  - `rg-c`
+  - `kf-10`
+  - mukati nyora kuti `Nyora makore ako pazasi apa`
+
+- Gadzira teerera mhinduro `tm` ane izvi:
+  - zita rekuti `tmOne`
+  - `kf-10`
+  - `color` yaunoda
+- Gadira bhatani `bt` rine izvi:
+  - zita rekuti `btOne`
+  - `kf-4`
+  - `kr-1.2`
+  - `ms-sz-1.5`
+  - `color` yaunoda
+  - mukati me bhatani nyora kuti `ndoita sei`
+
+**Mu ShonaScript**
+Tiri kuda kuti munhu atange anyora makore ake, tobva tatora nhamba yanyorwa iyoyo togadzira variable. Variable iyi tichange tichiienzanisa na 16, kana makore ari mudiki pana 16, tonyora mu `boxOne` kuti uchiri mudiki, zvimwe tichanyora kuti enda kuoffice
+
+- pakubaya btOne - tora nhamba yanyorwa mu tmOne ~ `x = pa tmOne tora nm` - enzanisa nhamba iyi na 16, `kana` iri diki, chinja mashoko arimu `boxOne` kuita `"Uchiri mudiki"`, `zvimwe` chinja mashoko arimubox one kuita `"Enda ku office"`
+  ```
+  kana x ari mudiki pana 16 {
+  pa boxOne chinja c kuita "red"
+  pa boxOne chinja ms kuita "Uchiri mudiki"
+  }
+  zvimwe{
+  pa boxOne chinja c kuita "green"
+  pa boxOne chinja ms kuita "Enda ku Office"
+  }
+      ```
+:::
+
+<MultipleImages
+  imageSources={["/img/dv8.jpg", "/img/dv8.1.jpg"]}
+/>
+
+<MultipleImages
+  imageSources={["/img/dv8.2.jpg", "/img/dv8.3.jpg"]}
+/>
+
+---
+### Fembera nhamba
+Tikuda kugadzira gemhu yekufembera nhamba. Tichada kuti ShonaScript isarudze nhamba iri pakati pa 0 na 3, tichishandisa `nhamba.chero(4)`. 
+Iwewe uchanyora nhamba mu teerera mhinduro iri pakati pa 0 na 3.
+Uchabaya bhatani kana wapedza. 
+Pakubaya bhatani iri, uchaenzanisa nhamba yasarudzwa ne ShonaScript, ne yawanyora iwewe, kana zvakafanana, uchanyora kuti `wagona` mu box, `zvimwe` uchanyora kuti watadza.
+Tinogona kugadzira rimwe box rekuzonyora nhamba ya sarudzwa ne ShonaScript, kuti uone kuti zveshuwa wagona here kana kuti watadza.
+
+:::success zvekuita
+
+- Gadzira box rine izvi:
+  - zita rekuti boxOne
+  - `rg-c`
+  - `kf-10`
+  - `kr-10`
+  - `ms-c-white` color yemashoko white
+- Gadzira rimwe box rine izvi:
+  - zita rekuti `boxTwo`
+  - `rg-c`
+  - `kf-10`
+
+- Gadzira teerera mhinduro `tm` ane izvi:
+  - zita rekuti `tmOne`
+  - `kf-10`
+  - `color` yaunoda
+- Gadira bhatani `bt` rine izvi:
+  - zita rekuti `btOne`
+  - `kf-2`
+  - `kr-2`
+  - `color` yaunoda
+  - icon yepa nhamba 72 ine color ne size yaunoda sokuti `ic-72-white-3`
+
+**Mu ShonaScript**
+- Tikuda kuti munhu atanga anyora nhamba yake mu `tmOne`, obva abaya bhatani.
+- Pakubaya bhatan iri, tikuda kuti ShonaScript isarudze nhamba, wobva watora nhamba yasarudzwa ne ShonaScript, ne nhamba yanyorwa mu `tmOne` woma enzanisa
+- Kana ma nhamba aya akaenzana, nyora mu `boxOne` kuti wagona, zvimwe nyora kuti watadza.
+- Tikuda kuratidza nhamba ya sarudzwa ne ShonaScript pa web application yedu, saka tichaisa nhamba iyoyo mu `boxTwo`
+
+```
+pakubaya btOne{
+x = pa tmOne tora nm
+y = nhamba.chero(4)
+
+pa boxTwo chinja ms kuita y
+kana x akaenzana na y {
+pa boxOne chinja c kuita "green"
+pa boxOne chinja ms kuita "Wagona"
+}
+
+zvimwe{
+pa boxOne chinja c kuita "red"
+pa boxOne chinja ms kuita "Watadza"
+}
+
+}
+```
+
+:::
+
+### Nguva
+
+export const MultipleImages = (props) => (
+  <div style={{ display: "flex" }}>
+    {props.imageSources.map((x) => (
+      <div
+        style={{
+          backgroundColor: "",
+          textAlign: "center",
+          display: "flex",
+          JustifyContent: "evenly",
+        }}
+      >
+        <div style={{ width: "95%" }}>
+          <img
+            src={x}
+            style={{
+              borderRadius: "0px",
+              boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px",
+            }}
+            width="95%"
+          ></img>
+        </div>
+      </div>
+    ))}
+  </div>
+);
+
+

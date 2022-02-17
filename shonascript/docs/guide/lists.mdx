@@ -71,7 +71,21 @@ Zita re list rinonyorwa semagadzirirwo evariable. Manyorero anoita ndeaya:
 Ngatimboti iwewe uri hwindi akarongeka we kombi, arikukwidza vanhu mukombi asi achinyora `list`  remazita evanhu vapinda mukombi.
 Ngatimboti panguva ino mukombi maane vanhu 5, zita re `list` rako rinonzi `vanhuMukombi`.
 
-:::success Ita 
+:::success Zvekuita 
+**Mu Application ye ShonaScript**
+1. pa `line 1`, nyora kuti: 
+```
+vanhuMukombi = ["Panashe", "Tanaka", "Kudzai", "Kupa", "Vimbai"]
+```
+2. pa `line 2`, nyora kuti: 
+```
+nyora(vanhuMukombi)
+```
+3. baya bhatani re round riri pazasi pe screen
+
+**Kana kuti**
+
+**Mu VS Code**
 1. mu `index.shona` pa `line 1`, nyora kuti: 
 ```
 vanhuMukombi = ["Panashe", "Tanaka", "Kudzai", "Kupa", "Vimbai"]
@@ -100,11 +114,18 @@ Kana uchida kuziva kuti mu `list` rako mune zvinhu zvingani, unoshandisa `.zving
 vanhuMukombi.vangani()
 ```
 
-
 <Image source="/img/list7.jpeg" />
 
 
-:::tip Ita
+:::tip Zvekuita
+**Mu Application ye ShonaScript**
+1. nyora `code` iri mu picture iyi
+2. baya bhatani re round riri pazasi pe screen
+
+**Kana kuti**
+
+**Mu VS Code**
+
 1. nyora `code` iyi mu `index.shona`
 
 2. mu `terminal`, nyora kuti: 
@@ -135,6 +156,29 @@ Ukaita izvi zvakanaka, unofana kuona mu `terminal` makanyorwa `nhamba` yezvinhu 
 
 
 :::tip Ita: "Ruvarashe" mu list
+**Mu Application ye ShonaScript**
+1. pa `line 3` nyora kuti:
+```
+isa "Ruvarashe" mu vanhuMukombi
+```
+
+_Kana kuti unogona kunyora:_
+
+1. pa `line 3` nyora kuti:
+
+```
+vanhuMukombi.isa("Ruvarashe")
+```
+2. pa `line 4`, nyora kuti: 
+```
+nyora(vanhuMukombi)
+```
+3. baya bhatani re round riri pazasi pe screen
+
+**Kana kuti**
+
+**Mu VS Code**
+
 1. mu `index.shona` pa `line 3` nyora kuti:
 ```
 isa "Ruvarashe" mu vanhuMukombi
@@ -189,6 +233,30 @@ Izvi zvinoitika nekuti `nyora()` atumwa ka 2 kunyora mu `terminal`:
 `"Kudzai"` asvika kwaanga achienda ne kombi, saka aakuburuka. Iwewe sa hwindi akarongeka, chibvisa zita rake kubva mu `list` rako riye. Tarisa pazasi kuti uone kuti unoita sei
 
 :::tip Ita: bvisa "Kudzai" kubva mu list
+
+**Mu Application ye ShonaScript**
+1. pa `line 6` nyora kuti:
+```
+bvisa "Kudzai" mu vanhuMukombi
+```
+
+**Kana kuti unogona kunyora:**
+
+1. pa `line 6` nyora kuti:
+
+```
+vanhuMukombi.bvisa("Kudzai")
+```
+
+2. pa `line 7`, nyora kuti: 
+```
+nyora(vanhuMukombi)
+```
+
+**Kana kuti**
+
+**Mu VS Code**
+
 1. mu `index.shona` pa `line 6` nyora kuti:
 ```
 bvisa "Kudzai" mu vanhuMukombi
@@ -281,6 +349,18 @@ Asi `computer` ichatangira pana `zero` kwete pana `1` seizvi:
 Aya ndiwo matarisiro anoita `computer` zvinhu zviri mu`list`. Unogona kutora chinhu mu `list` ogadzira `variable` kuti uone kuti chii chinoitika
 :::
 :::success **Ita**
+**Mu Application ye ShonaScript**
+1. pazasi pe`code` yawambonyora, nyora kuti 
+```
+munhu = vanhuMukombi[1]
+nyora(munhu)
+``` 
+2. baya bhatani re round riri pazasi pe screen
+
+**Kana kuti**
+
+**Mu VS Code**
+
 
 1. mu `index.shona`, pazasi pe`code` yawambonyora, nyora kuti 
 ```
@@ -297,13 +377,36 @@ nyora(munhu)
 
 Ukaita izvi zvakanaka, uchaona kuti `nyora()` wekupedzisira anonyora chinhu chiri pa`nhamba` 2 mu `list` rako, kwete pekutanga, nekuti chinhu chekutanga chiri pa `nhamba` 0 kwete 1
 
-
 ### Kupinda mu list
 
 Iwewe sa hwindi ane hunhu, ukuda kumhoresa munhu mumwe nemumwe arimukombi yako nezita rake nekuti unoziva mazita avo. Unoita sei?
 Tichaedza kuita izvi nenzira 2, asi wega uchazviona kuti ndezvipi zvirinani.
 
 :::tip Nzira yekutanga: Shandisa `nyora` pane mu wese ari mulist
+
+**Mu Application ye ShonaScript**
+1. dzima maline ese osiya line rekutanga rakanzi:
+```
+vanhuMukombi = ["Panashe", "Tanaka", "Kudzai", "Kupa", "Vimbai"]
+```
+chinyora pa `line 2` kuti:
+```
+nyora("Hesi Panashe")
+```
+enda pa `line 3` onyora kuti: 
+```
+nyora("Hesi Tanaka")
+```
+enda pane `line` riri kutevera uchidzokorora kumhoresa munhu arimo sezvaitwa pa `line 2` na `line 3`, upedzisire pane `line 6`. Tarisa _picture_ iri pazasi kuti uone maitirwo azvo
+```
+nyora("Vimbai")
+``` 
+2. baya bhatani re round riri pazasi pe screen
+
+**Kana kuti**
+
+**Mu VS Code**
+
 1. mu `index.shona` dzima maline ese osiya line rekutanga rakanzi:
 ```
 vanhuMukombi = ["Panashe", "Tanaka", "Kudzai", "Kupa", "Vimbai"]
@@ -322,9 +425,7 @@ nyora("Vimbai")
 ```
 :::
 
-
 <Image source="/img/list3.jpeg"/>
-
 
 <Question text="Ko kana mu list mangu muine vanhu 1000?" />
 
@@ -410,7 +511,15 @@ Pa `line 3`, tiri kuudza `computer` kuti tarisa mu `vanhuMukombi` kuti `muna` `v
 Pa `line 4`, tangoita zvakafanana nepa `line 3`, asi tikuudza `computer` kuti tarisa `variable` inonzi `munhuAkutsvagwa` kuti `irimu` `vanhuMukombi` here. Iwewe unoshandisa line 3 kana line 4, zvichienderana nezvawanzwisisa
 :::
 
-:::tip Ita
+:::tip Zvekuita
+
+**Mu Application ye ShonaScript**
+1. Nyora `code` iyoyi
+2. baya bhatani re round riri pazasi pe screen
+
+**Kana kuti**
+
+**Mu VS Code**
 
 Nyora `code` iyoyi mu `index.shona`, wochiita izvi:
 
@@ -482,6 +591,15 @@ Ku`jamba` apa zvinoreva kuti `computer` icharega kushandisa `code` yese ichateve
 :::
 
 :::success Ita
+
+**Mu Application ye ShonaScript**
+1. Nyora `code` iyoyi
+2. baya bhatani re round riri pazasi pe screen
+
+**Kana kuti**
+
+**Mu VS Code**
+
 Nyora `code` iyoyi mu `index.shona`, wochiita izvi:
 
 1. mu `terminal`, nyora kuti: 
@@ -519,6 +637,15 @@ Asi kana `varibale` inonzi `munhu` isina kufanana ne variable inonzi `munhuWanda
 :::
 
 :::success Ita
+
+**Mu Application ye ShonaScript**
+1. Nyora `code` iyoyi
+2. baya bhatani re round riri pazasi pe screen
+
+**Kana kuti**
+
+**Mu VS Code**
+
 Nyora `code` iyoyi mu `index.shona`, wochiita izvi:
 
 1. mu `terminal`, nyora kuti: 
@@ -568,11 +695,8 @@ Tinonyora code iyi seizvi:
 - Tagadzira `variable` inonzi `nhambaYeVanhu` pa `line 2`. `Variable` iyi i `nhamba` yatichange tichiwedzera pakuverenga vanhu tapinda mu `list`. `nhambaYeVanhu` iyi ichange ichiwedzera na `1` kana tabva pane munhu wekutanga tichienda pane munhu wechipiri, zvichingodaro. 
 - Tagadzira `variable` inonzi `nhambaYekubuda` pa `line 3`, bvatati `nhamba` iyi ndi 3. Tichada kuzo `enzanisa` `variable` iyi ne `variable` ye `nhambaYeVanhu` ichange ichiwedzera kubva pana 0 zvichienda mberi
 
-
-
 **Pa `line 4`**
 - Apa tanyora `code` yekupinda mu `list` re `vanhuMukombi`
-
 
 **Pa `line 5` na `line 6`**
 - Tikuda kuwedzera `nhambaYeVanhu` na `1` kana tave kufamba kubva pane chinhu chimwe ne chimwe mu `list`. 
@@ -590,6 +714,15 @@ Tinonyora code iyi seizvi:
 :::
 
 :::tip Ita
+
+**Mu Application ye ShonaScript**
+1. Nyora `code` iyoyi
+2. baya bhatani re round riri pazasi pe screen
+
+**Kana kuti**
+
+**Mu VS Code**
+
 Nyora `code` iyoyi mu `index.shona`, wochiita izvi:
 
 1. mu `terminal`, nyora kuti: 

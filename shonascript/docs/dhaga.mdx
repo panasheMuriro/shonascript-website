@@ -3,3 +3,67 @@ sidebar_position: 4
 ---
 
 # Dhaga Chii?
+
+Ma `website` nema `web application` akawanda anogadzirwa ne `language` inonzi `HTML`. 
+Kuzochinja mamiriro akaita akaita ma `website` aya nema `web application` aya, panoshandisa inonzi `CSS`. Ngatimbotarisa zvakaita `HTML` ne `CSS` iyi.
+
+```
+<div style="background-color: red; height: 50vw; width: 50vw">
+</div>
+
+```
+:::info **chii chikuitika apa**
+- Tagadzira chinhu chinonzi `div` ne `HTML`. `Div` iyi ingori `box` rinozobuda pa website. 
+- Kana uchinge wagadzira `div` iyi, inotanga yakareba size 0, yakafara size 0, uye isina `color`, saka inenge isingaoneke. 
+- `CSS` ndiyo yazoshandiswa apa `style="background-color: red; height: 50px; width: 50px"` kupa `div` iyi color, size yekureba(height), ne size yekufara(width).
+:::
+
+`HTML` ne `CSS` zvinoshanda zvakanaka kugadzira ma website, asi dambudziko hombe nderekuti kana uchida kugadzira website pa `screen` diki rakaita se phone, zvinonetsa uye zvinotora nguva yakawanda kunyora zvinhu izvi zvakawanda zve HTML ne CSS kuti pabude chinhu chakaita se box pa website.
+Ukatarisa, tanyora `div` wacho ka 2, izvi zvinoitwa nekuti `div` wekutanga ndewekuvhura, `div` mumwe wacho ndewekuvhara.
+
+
+<Question text="Ko hapana here imwe language yaunogona kushandisa panzvimbo ye HTML ne CSS kugadzira website usinga dzokorore mashoko kana kunyora zvakawanda?"/>
+
+Apa ndipo panopinda `Dhaga`. `Dhaga` i language inoshanda **kuumba** ma website kana ma web application pa phone.  
+Kuti ugadzire box rakafanana neragadzirwa pamusoro ne HTML + CSS, unoita izvi
+```
+box c-red kr-5 kf-5:
+;
+```
+Izvi zvinoreva kuti gadzira `box` rine zvinhu izvi:
+- color ye red ~ `c-red`
+- kureba size 5 ~ `kr-5`
+- kufara size 5 ~ `kf-5`
+- `:` na `;` ndiko kuvhura nekuvhara box. Apa box redu harina chinhu, asi unozoona kumberi mashandisirwo e `box`
+
+Sezvaukuona, unonyora zvinhu zvishoma ne `Dhaga` pane zvaunonyora kana uchishandisa `HTML` ne `CSS`. 
+
+## ShonaScript + Dhaga
+
+Kazhinji munhu akaenda pa website, anogona kubaya ma `bhatani` ekuita zvakasiyana siyana zvakaita sekutumira `message`. 
+Kana website yakagadzirwa ne `HTML` ne `CSS`, inozo shandisawo imwe language inonzi `JavaScript` kuti ma`bhatani` aya ashande. 
+Isusu kutiwo mabhatani edu ashande nezvimwewo zvakawanda wanda, tichashandisa language yedu, `ShonaScript`.
+
+Tave kuda kutarisa kuti zvii zvimwe zvaunogona kuita ne `Dhaga`
+
+
+
+
+
+
+
+
+
+
+
+
+
+export const Question = ({text}) =>    (
+        <div style={{display: "flex",alignItems:"center",  width: "80%", minHeight: "100px", backgroundColor: "#FFEDC4", borderRadius: "10px", padding: "5px", margin: "auto", border: "solid", borderWidth: "1px", borderColor: "rgba(0,0,0,0.1)", boxShadow: "rgba(0,0,0,0.15) 0 10px 15px -3px", marginBottom: "10px"}}>
+         <div style={{flex: 2, fontSize: "14px"}}>{text}</div> 
+        <div style={{flex: 1, display:'flex', alignItems: "center"}}>
+            <img src="/img/question (1).png" height="100px">
+            </img>
+        </div>
+        </div>
+    )
